@@ -1,0 +1,196 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #191717;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  z-index: 10;
+  background-color: transparent;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+header .logo {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center; /* Ensures the search bar aligns with the nav items */
+  gap: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+header nav ul li {
+  margin: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Search Bar Styling */
+header .search input {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 200px; /* Adjust width for better alignment */
+}
+
+header .search button {
+  padding: 6px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header .search button:hover {
+  background-color: #218838;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 150px 20px 50px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  transition: font-size 0.3s ease;
+}
+
+.hero .cta-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Featured Articles Section */
+.featured-articles {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.featured-articles h2 {
+  margin-bottom: 20px;
+}
+
+.articles-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.article {
+  background-color: #f9f9f9;
+  padding: 20px;
+  width: 30%;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.article h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.article p {
+  font-size: 1rem;
+}
+
+/* About Section */
+.about {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* Scroll Effects */
+.shrink header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 30px;
+}
+
+.shrink .logo {
+  font-size: 1.5rem;
+}
+
+.shrink .hero {
+  padding: 50px 20px;
+  height: 60vh;
+  opacity: 0.8;
+}
+
+.shrink .hero h2 {
+  font-size: 2.5rem;
+}
+
+/* Light/Dark Mode */
+[data-theme="dark"] {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+[data-theme="dark"] header {
+  background-color: #111;
+}
+
+[data-theme="dark"] .cta-btn {
+  background-color: #007bff;
+}
