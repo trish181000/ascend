@@ -15,7 +15,7 @@ body {
 
 /* Header Styles */
 header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -28,16 +28,20 @@ header {
   transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
-header .logo {
-  font-size: 2rem;
-  color: white;
-  margin: 0;
+.sticky-menu {
+background: transparent;
+position: fixed;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  mix-blend-mode:color-dodge
 }
 
 header nav {
   display: flex;
   align-items: center; /* Ensures the search bar aligns with the nav items */
-  gap: 20px;
 }
 
 header nav ul {
@@ -47,36 +51,66 @@ header nav ul {
 }
 
 header nav ul li {
-  margin: 0;
+  margin: 7px;
 }
 
 header nav ul li a {
-  color: white;
+  color: #4a4d60;
   text-decoration: none;
   font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
 }
 
-/* Search Bar Styling */
-header .search input {
-  padding: 5px 10px;
+nav ul li a:hover {
+  color: #ff6347;
+  transform: scale(1.2);
+}
+
+.search {
+  height: 30px
+}
+
+.submit {
   border: none;
-  border-radius: 5px;
-  margin-top: 10px;
-  width: 200px; /* Adjust width for better alignment */
+  outline: none;
+  background: none;
+  text-align: center;
+  width: 70px;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.5s;
 }
-
-header .search button {
-  padding: 6px 15px;
-  background-color: #28a745;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-header .search button:hover {
-  background-color: #218838;
-}
+.submit::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 200px;
+  width: 250px;
+  border-radius: 50%;
+  top: 100%;
+  left: 100%;
+  transition: 0.7s;
+} 
+ 
+.submit:hover {
+  color: rgb(255, 255, 255);
+} 
+ 
+.submit:hover::before {
+  top: -40px;
+  left: -40px;
+} 
+ 
+.submit-fill {
+  color: rgb(51, 51, 51);
+  border: 2px solid rgb(51, 51, 51);
+} 
+ 
+.submit-fill::before {
+  background: rgb(51, 51, 51);
+} 
 
 /* Hero Section */
 .hero {
@@ -84,7 +118,7 @@ header .search button:hover {
   height: 100vh;
   color: #4a4d60;
   text-align: center;
-  padding: 150px 20px 50px;
+  padding: 400px 20px 50px;
   transition: all 0.3s ease-in-out;
   position: relative;
   z-index: 1;
