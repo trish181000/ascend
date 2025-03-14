@@ -10,25 +10,20 @@
 <body>
 
   <!-- Header Section -->
-  <header id="header">
-    <div class="logo">
-      <img src="assets/ascend-logo.png" alt="Image of ascend logo, with a swoop over the word to reperesnt an elevation of knowlege." width="200">
-    </div>
+  <header class="sticky-menu" id="header">
+      <img src="assets/ascend-logo.png" alt="Image of ascend logo, with a swoop over the word to reperesnt an elevation of knowlege." class="logo">
     <nav id="nav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Articles</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Sign Up</a></li>
-        <!-- Search Bar Added -->
-        <li class="search-bar">
+         <li class="search-bar">
           <form action="#" method="GET">
-            <input type="text" placeholder="Search..." name="search">
-            <button type="submit">Search</button>
+            <input class="search" type="text" placeholder="Search..." name="search">
+            <button class="submit submit-fill" type="submit">Search</button>
           </form>
         </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -39,7 +34,6 @@
       <h2>Discover the World of STEAM</h2>
       <p>Explore interactive articles on Science, Technology, Engineering, Art, and Math</p>
       <a href="#" class="cta-btn">Explore Articles</a>
-      <a href="#" class="cta-btn">Sign Up</a>
     </div>
   </section>
 
@@ -70,7 +64,7 @@
 
   <!-- Footer Section -->
   <footer>
-    <p>&copy; 2025 STEAM Magazine. All rights reserved.</p>
+    <p>&copy; 2025 ascend Magazine. All rights reserved.</p>
     <div class="social-links">
       <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
     </div>
