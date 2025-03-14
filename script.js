@@ -14,19 +14,18 @@ window.addEventListener('scroll', function() {
   });
   
   let currentFeature = 1;
+const totalFeatures = 3;
 
-function nextFeature(featureNumber) {
-    // Hide all features
-    document.querySelectorAll(".feature").forEach(feature => {
-        feature.classList.remove("active");
-    });
+function nextFeature(next) {
+    // Get all features
+    const features = document.querySelectorAll('.feature');
 
-    // Show the next feature
-    document.getElementById(`feature${featureNumber}`).classList.add("active");
+    // Fade out the current feature
+    features.forEach(feature => feature.classList.remove('active'));
+
+    // Fade in the next feature
+    document.getElementById(`feature${next}`).classList.add('active');
+
+    // Update current feature
+    currentFeature = next;
 }
-
-// Ensure the first feature is visible on load
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("feature1").classList.add("active");
-});
-  
