@@ -13,4 +13,20 @@ window.addEventListener('scroll', function() {
     }
   });
   
+  let currentFeature = 1;
+
+function nextFeature(featureNumber) {
+    // Hide all features
+    document.querySelectorAll(".feature").forEach(feature => {
+        feature.classList.remove("active");
+    });
+
+    // Show the next feature
+    document.getElementById(`feature${featureNumber}`).classList.add("active");
+}
+
+// Ensure the first feature is visible on load
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("feature1").classList.add("active");
+});
   

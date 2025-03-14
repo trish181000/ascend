@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ascend</title>
   <link rel="stylesheet" href="styles/universal.css">
+  <link rel="stylesheet" href="styles/featured-articles.css">
 </style>
 </head>
 <body>
@@ -37,24 +38,31 @@
     </div>
   </section>
 
-  <!-- Featured Articles Section -->
   <section class="featured-articles">
-    <h2>Featured Articles</h2>
-    <div class="articles-grid">
-      <div class="article">
-        <h3>Science in Space</h3>
-        <p>Explore the latest discoveries in space exploration and technology.</p>
-      </div>
-      <div class="article">
-        <h3>Robotics for the Future</h3>
-        <p>How robots are changing industries and what the future holds.</p>
-      </div>
-      <div class="article">
-        <h3>Art & Technology: A New Era</h3>
-        <p>Blending creativity with cutting-edge technology for a modern world.</p>
-      </div>
+    <div class="feature active" id="feature1" style="background-image: url('assets/light.jpg');">
+        <div class="feature-content">
+            <h2 class="feature-title">Properties of Light</h2>
+            <button class="next-button" onclick="nextFeature(2)">Up Next: Intro to Cells →</button>
+        </div>
     </div>
-  </section>
+
+    <div class="feature" id="feature2" style="background-image: url('assets/cells.jpg');">
+        <div class="feature-content">
+            <h2 class="feature-title">Intro to Cells</h2>
+            <button class="next-button" onclick="nextFeature(3)">Up Next: Cloud Virtualization →</button>
+        </div>
+    </div>
+
+    <div class="feature" id="feature3" style="background-image: url('assets/virtual-cloud.jpg');">
+        <div class="feature-content">
+            <h2 class="feature-title">Cloud Virtualization</h2>
+            <button class="next-button" onclick="nextFeature(1)">Up Next: Properties of Light →</button>
+        </div>
+    </div>
+</section>
+
+  
+
 
   <!-- About Section -->
   <section class="about">
@@ -64,7 +72,7 @@
 
   <!-- Footer Section -->
   <footer>
-    <p>&copy; 2025 ascend Magazine. All rights reserved.</p>
+    <p>&copy; 2025 ascend. All rights reserved.</p>
     <div class="social-links">
       <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
     </div>
