@@ -38,18 +38,16 @@ position: fixed;
 .logo {
   width: 200px;
   height: auto;
-  mix-blend-mode:color-dodge
 }
 
 header nav {
   display: flex;
-  align-items: center; /* Ensures the search bar aligns with the nav items */
+  align-items: center;
 }
 
 header nav ul {
   list-style: none;
   display: flex;
-  margin: 0;
 }
 
 header nav ul li {
@@ -70,7 +68,7 @@ nav ul li a:hover {
 }
 
 .search {
-  height: 30px
+  height: 30px;
 }
 
 .submit {
