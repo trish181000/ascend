@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ascend</title>
+  <title>Ascend - Explore</title>
   <link rel="stylesheet" href="../styles/universal.css">
   <link rel="stylesheet" href="../styles/explore.css">
   <link rel="stylesheet" href="https://use.typekit.net/iof4yyq.css">
@@ -36,48 +36,57 @@
     <p>Explore the articles below, curated by ascend's field experts. Ascend your knowledge.</p>
   </section>
 
-  <section class="science">
-    <h2>Science</h2>
-    <div class="carousel-container swiper">
-        <div class="carousel-wrapper swiper-wrapper">
-            <ul class="article-list">
-                <li class="article-item swiper-slide" style="background-image: url('../assets/microorganisms.jpg');">
-                    <a href="#" class="article-link">
-                       <h3 class="article-title">Introduction to Cells: The Building Blocks of Life</h3>
-                       <button class="carousel-button
-                       material-symbols-rounded">arrow_forward</button>
-                    </a>
-                </li>
-                <li class="article-item swiper-slide" style="background-image: url('../assets/climate-change.jpg');">
-                    <a href="#" class="article-link">
-                       <h3 class="article-title">Climate Change and the Carbon Cycle: What’s Really Happening?</h3>
-                       <button class="carousel-button
-                       material-symbols-rounded">arrow_forward</button>
-                    </a>
-                </li>
-                <li class="article-item swiper-slide" style="background-image: url('../assets/gravity.jpg');">
-                    <a href="#" class="article-link">
-                       <h3 class="article-title">Newton vs. Einstein: Understanding the Laws of Motion and Gravity</h3>
-                       <button class="carousel-button
-                       material-symbols-rounded">arrow_forward</button>
-                    </a>
-                </li>
-                <li class="article-item swiper-slide" style="background-image: url('../assets/prism-light.jpg');">
-                    <a href="#" class="article-link">
-                       <h3 class="article-title">The Properties of Light: How It Shapes the World Around Us</h3>
-                       <button class="carousel-button
-                       material-symbols-rounded">arrow_forward</button>
-                    </a>
-                </li>
-            </ul>
-        </div>
+  <div class="container swiper">
+    <div class="card-wrapper">
+        <ul class="card-list swiper-wrapper">
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="../assets/microorganisms.jpg" alt="card image" 
+                    class="card-image">
+                    <p class="badge">Science</p>
+                    <h3 class="card-title">Introduction to Cells: The Building Blocks of Life</h3>
+                        <button class="card-button 
+                        material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="../assets/gravity.jpg" alt="card image" 
+                    class="card-image">
+                    <p class="badge">Science</p>
+                    <h3 class="card-title">Newton vs. Einstein: The Laws of Motion and Gravity</h3>
+                        <button class="card-button 
+                        material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="../assets/prism-light.jpg" alt="card image" 
+                    class="card-image">
+                    <p class="badge">Science</p>
+                    <h3 class="card-title">The Properties of Light: How It Shapes the World Around Us</h3>
+                        <button class="card-button 
+                        material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+            <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                    <img src="../assets/climate-change.jpg" alt="card image" 
+                    class="card-image">
+                    <p class="badge">Science</p>
+                    <h3 class="card-title">Climate Change and the Carbon Cycle: What’s Really Happening?</h3>
+                        <button class="card-button 
+                        material-symbols-rounded">arrow_forward</button>
+                </a>
+            </li>
+        </ul>
+
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-        </div>
-        </section>
-
-  
+      
+    </div>
+  </div>
  
 <footer>
     <p>&copy; 2025 ascend. All rights reserved.</p>
@@ -85,6 +94,7 @@
       <a href="#">TikTok</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
     </div>
 </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../carousel-script.js"></script>
 </body>

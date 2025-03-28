@@ -1,54 +1,124 @@
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+body {
     background: linear-gradient(#a5bece, #e7ecef);
 }
 
-.article-list .article-item {
+.header {
+    min-height: auto;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    margin-left: 10vh;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    max-height: 70vh;
+}
+
+.card-list {
+    margin-top: 50px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-item {
+    flex-shrink: 0;
+    width: 400px;
     list-style: none;
 }
 
-.article-list .article-item .article-link {
-    user-select: none;
+.card-wrapper{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}
+
+.card-link {
     display: block;
+    background: #fff;
     padding: 18px;
     border-radius: 12px;
     text-decoration: none;
-    transition: transform 0.5s ease;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
 }
 
-.article-link:hover{
- transform: scale(1.05);
+.card-list .card-item {
+    list-style: none;
 }
 
-.article-list .article-link {
-width: 100%;
-aspect-ratio: 16 / 9;
-border-radius: 10px;
+.card-list .card-item .card-link{
+    width: 400px;
+    display: block;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
 }
 
-.article-list .article-link .article-title {
-    color: #f4f6f7;
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+    color: #72c780;
+    padding: 8px 16px;
+    font-size: 0.95;
+    font-weight: 800;
+    margin: 16px 0 18px;
+    background: none;
+    width: fit-content;
+    border-radius: 50px;
+    border: 2px solid #72c780;
+}
+
+.card-list .card-link .card-title {
+    font-size: 1.19rem;
+    color: #4a4d60;
     font-weight: 600;
 }
 
-.article-list .article-link .carousel-button {
+.card-list .card-link .card-button {
     height: 35px;
     width: 35px;
-    color: #f4f6f7;
+    color: #4a4d60;
     border-radius: 50%;
     margin: 30px 0 5px;
     background: none;
     cursor: pointer;
-    border: 2px solid #f4f6f7;
+    border: 2px solid #4a4d60;
     transform: rotate(-45deg);
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 }
 
-.article-list .article-link:hover .carousel-button{
-    color: #72c780;
-    background: #f4f6f7;
+
+.card-list .card-link:hover .card-button {
+    color: #fff;
+    background: #4a4d60;
+    transform: scale(1.2);
 }
 
+.card-list .card-link:hover {
+    transform: scale(1.05);
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    color: #4a4d60 !important; /* Ensure they are visible */
+    font-size: 24px;
+}
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 5px;
+}
