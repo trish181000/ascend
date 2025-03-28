@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ascend</title>
-  <link rel="stylesheet" href="../styles/universal.css">
-  <link rel="stylesheet" href="../styles/featured-articles.css">
-  <link rel="stylesheet" href="../styles/hero-image.css">
-  <link rel="stylesheet" href="../styles/landing-about.css">
+  <link rel="stylesheet" href="styles/universal.css">
+  <link rel="stylesheet" href="styles/featured-articles.css">
+  <link rel="stylesheet" href="styles/hero-image.css">
+  <link rel="stylesheet" href="styles/landing-about.css">
   <link rel="stylesheet" href="https://use.typekit.net/iof4yyq.css">
 </style>
 </head>
@@ -15,7 +15,7 @@
 
   <!-- Header Section -->
   <header id="header" class="sticky-menu">
-      <img src="../assets/ascend-logo.png" alt="Image of ascend logo, with a swoop over the word to reperesnt an elevation of knowlege." class="logo">
+      <img src="assets/ascend-logo.png" alt="Image of ascend logo, with a swoop over the word to reperesnt an elevation of knowlege." class="logo">
     <nav id="nav">
       <ul>
          <li class="search-bar">
@@ -25,8 +25,8 @@
           </form>
         </li>
         <li><a href="index.html">Home</a></li>
-        <li><a href="explore.html">Explore</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="pages/explore.html">Explore</a></li>
+        <li><a href="pages/about.html">About</a></li>
       </ul>
     </nav>
   </header>
@@ -34,7 +34,7 @@
   <!-- Hero Section -->
   <section class="hero" id="hero">
      <video autoplay muted loop id="heroVideo">
-        <source src="../assets/hero-vid.mp4" type="video/mp4">
+        <source src="assets/hero-vid.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <div class="hero-content">
@@ -47,21 +47,21 @@
 
     <!-- Feature Articles -->
   <section class="featured-articles">
-    <div class="feature active" id="feature1" style="background-image: url('../assets/light.jpg');">
+    <div class="feature active" id="feature1" style="background-image: url('assets/light.jpg');">
         <div class="feature-content">
             <h2 class="feature-title">Properties of Light</h2>
             <button class="next-button" onclick="nextFeature(2)">Up Next: Intro to Cells →</button>
         </div>
     </div>
 
-    <div class="feature" id="feature2" style="background-image: url('../assets/cells.jpg');">
+    <div class="feature" id="feature2" style="background-image: url('assets/cells.jpg');">
         <div class="feature-content">
             <h2 class="feature-title">Intro to Cells</h2>
             <button class="next-button" onclick="nextFeature(3)">Up Next: Cloud Virtualization →</button>
         </div>
     </div>
 
-    <div class="feature" id="feature3" style="background-image: url('../assets/virtual-cloud.jpg');">
+    <div class="feature" id="feature3" style="background-image: url('assets/virtual-cloud.jpg');">
         <div class="feature-content">
             <h2 class="feature-title">Cloud Virtualization</h2>
             <button class="next-button" onclick="nextFeature(1)">Up Next: Properties of Light →</button>
@@ -83,7 +83,7 @@
     </div>
   </footer>
 
-  <script src="../script/universal-script.js"></script>
-  <script src="../script/universal-script.js"></script>
+  <script src="scripts/universal-script.js"></script>
+  <script src="scripts/featured-script.js"></script>
 </body>
 </html>
