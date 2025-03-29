@@ -2,19 +2,20 @@ body {
     background: linear-gradient(#f4f6f7, #a5bece);
 }
 
-.explore-desc{
+.explore-desc {
     margin-top: 175px;
     margin-bottom: 150px;
     text-align: center;
     color: #4a4d60;
 }
 
-.explore-desc h1{
+.explore-desc h1 {
     font-size: 3rem;
 }
 
-.explore-desc p{
-    margin: 20px 250px 0px;
+.explore-desc p { 
+    max-width: 70%;
+    margin: 20px auto;
 }
 
 h2 {
