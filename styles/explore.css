@@ -2,6 +2,13 @@ body {
     background: linear-gradient(#f4f6f7, #a5bece);
 }
 
+h1 {
+    margin-top: 150px;
+    text-align: center;
+    color: #4a4d60;
+    font-size: 3rem;
+}
+
 .science {
     display: flex;
     align-items: center;
