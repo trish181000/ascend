@@ -1,9 +1,40 @@
+body {
+    background: linear-gradient(#f4f6f7, #a5bece);
+}
+
 .science {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background: linear-gradient(#f4f6f7, #a5bece);
+    min-height: 50vh;
+}
+
+.technology {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.engineering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.art {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.mathematics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
 }
 
 .card-wrapper {
@@ -41,27 +72,30 @@
 }
 
 .card-list .card-link .badge {
-   color: #72c780;
    padding: 8px 16px;
    font-size: 0.95rem;
    font-weight: 700;
    margin: 16px 0 18px;
-   background: #e8fcec;
    width: fit-content;
    border-radius: 50px;
 }
 
-.card-list .card-link .badge.technology{
+.card-list .card-link .badge.sci {
+    color: #72c780;
+    background: #e8fcec;
+}
+
+.card-list .card-link .badge.tech{
     color: #a5bece;
     background: #edf8ff;
 }
 
-.card-list .card-link .badge.engineering{
+.card-list .card-link .badge.eng{
     color: #fec847;
     background: #fff7e6;
    }
 
-.card-list .card-link .badge.art{
+.card-list .card-link .badge.ar{
     color: #a584a0;
     background: #fff0fd;
    }
