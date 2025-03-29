@@ -2,41 +2,6 @@ body {
     background: linear-gradient(#f4f6f7, #a5bece);
 }
 
-.science {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
-}
-
-.technology {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
-}
-
-.engineering {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
-}
-
-.art {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
-}
-
-.mathematics {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
-}
-
 .card-wrapper {
     max-width: 1100px;
     margin: 0 60px 35px;
