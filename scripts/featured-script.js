@@ -1,16 +1,12 @@
-let currentFeature = 1;
-const totalFeatures = 3;
-
-function nextFeature(next) {
-    // Get all features
+function openFeature(id) {
     const features = document.querySelectorAll('.feature');
+    
+    // Collapse all features
+    features.forEach(feature => {
+      feature.classList.remove('active');
+    });
 
-    // Fade out the current feature
-    features.forEach(feature => feature.classList.remove('active'));
-
-    // Fade in the next feature
-    document.getElementById(`feature${next}`).classList.add('active');
-
-    // Update current feature
-    currentFeature = next;
-}
+    // Expand the selected one
+    const selected = document.getElementById(`feature${id}`);
+    selected.classList.add('active');
+  }
