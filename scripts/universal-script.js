@@ -12,3 +12,18 @@ window.addEventListener('scroll', function() {
       hero.classList.remove('shrink');
     }
   });
+
+  //Back-to-top Button — Show/hide button
+  window.onscroll = function () {
+    const btn = document.getElementById("backToTop");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Scroll to top
+  document.getElementById("backToTop").addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
