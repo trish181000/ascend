@@ -1,0 +1,177 @@
+.title-container {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    padding: 2rem;
+    position: relative;
+    color: white;
+  }
+  
+  .title-overlay {
+    background: rgba(0, 0, 0, 0.4); /* soft dark overlay for text contrast */
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    max-width: 700px;
+  }
+  
+  .article-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .intro-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+  }
+  
+  .article-intro-1 h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #222; /* or your brand color */
+    text-align: left;
+  }
+  
+  .article-intro-1 p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #444;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  
+  .article-gallery {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 3rem 0;
+  }
+  
+  .horizontal-gallery {
+    display: flex;
+    gap: 0;
+  }
+  
+  .horizontal-gallery img {
+    height: 300px; /* Or whatever consistent height you want */
+    width: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+    display: block;
+  }
+
+  .article-gallery {
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .horizontal-gallery img {
+    scroll-snap-align: start;
+  }
+
+  .split-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* positions the image toward the bottom */
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+  
+  .left-content {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .left-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .right-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  .right-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .article-section-2 {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .centered-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #333;
+  }
+  
+  .horizontal-layout {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .text-block {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .text-block .subheading h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .middle-image {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .middle-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .side-paragraph {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  @media (max-width: 768px) {
+    .horizontal-layout {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .text-block, .middle-image, .side-paragraph {
+      width: 100%;
+    }
+  }
+  
+  
