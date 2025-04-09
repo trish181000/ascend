@@ -31,16 +31,16 @@ header {
 }
 
 .sticky-menu {
-  background: #fff; /* White background */
-  position: relative; /* Removed sticky behavior, it now stays at the top */
+  background: #f4f6f7;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Optional shadow for separation */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem; /* Padding for better spacing */
+  padding: 1rem 2rem;
 }
 
 .logo {
@@ -80,6 +80,8 @@ nav ul li a:hover {
 
 .search {
   height: 30px;
+  border-radius: 15px;
+  border: none;
 }
 
 .submit {
@@ -89,6 +91,7 @@ nav ul li a:hover {
   text-align: center;
   width: 70px;
   height: 30px;
+  border-radius: 15px;
   position: relative;
   overflow: hidden;
   transition: color 0.5s;
@@ -100,7 +103,7 @@ nav ul li a:hover {
   z-index: -1;
   height: 200px;
   width: 250px;
-  border-radius: 50%;
+  border-radius: 70%;
   top: 100%;
   left: 100%;
   transition: 0.7s;
