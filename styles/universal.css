@@ -10,9 +10,9 @@ body {
   font-family: "articulat-cf", sans-serif;
   font-weight: 400;
   font-style: normal;
-    background-color: #f4f6f7;
-    color: #333333;
-    line-height: 1.6;
+  color: #333333;
+  line-height: 1.6;
+  background: linear-gradient(#f4f6f7, #a5bece);
 }
 
 /* Header Styles */
