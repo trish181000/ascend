@@ -37,19 +37,41 @@
   </nav>
 </header>
 
-<section class="title-container" style="background-image: url('../assets/cells.jpg');">
-  <div class="title-overlay">
-    <h1 class="article-title">The Building Blocks of Life: Exploring Cells</h1>
+<section class="title-container" style="background-image: url('../assets/networking-101.jpg');">
+    <h1 class="article-title">Networking 101: From Connections to Security</h1>
   </div>
 </section>
 
 <section class="intro-container">
 <div class="article-intro-1">
-    <h2>Lorem ipsum dolor sit amet.</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-      Distinctio deserunt explicabo, necessitatibus earum cupiditate veritatis vel ea? 
-      Quae deserunt veniam velit sed, possimus tenetur reiciendis placeat ab mollitia molestias 
-      optio delectus consequatur libero, voluptates dolorem est assumenda nostrum ipsam animi.</p>
+    <h2>Computer Networking</h2>
+    <p>
+      The process of bridging two or more computing devices to facilitate
+       the communication of information and resources though physical or 
+       wireless mediums (“What is computer networking?”, 2024) (“SMB 
+       University: Selling Cisco,” n.d.). When these devices have indeed
+        formed connections between each other, we call this a network.
+    </p>
+    <p>
+      While there are many different types of networks, two basic setups will be discussed:
+    </p>
+    <p>
+      Local Area Network (LAN) – a collection of connected devices in one 
+      physical location (“What is computer networking?”, 2024) (“What is 
+      Computer Networking?”, n.d.) (“SMB University: Selling Cisco,” n.d.).
+       A LAN can vary in size and include both wired and wireless devices 
+       (“What is computer networking?”, 2024) (“What is Computer Networking?”, 
+       n.d.) (“SMB University: Selling Cisco,” n.d.).
+    </p>
+    <p>
+      Wide Area Network (WAN) – a collection of LANs and/or individual devices
+       that stretches over a large geographical area (“What is computer 
+       networking?”, 2024) (“What is Computer Networking?”, n.d.) (“SMB 
+       University: Selling Cisco,” n.d.). WANs are typically used by large 
+       organizations and government bodies (“What is computer networking?”, 
+       2024) (“What is Computer Networking?”, n.d.) (“SMB University: Selling
+        Cisco,” n.d.).
+    </p>
 </div>
 </section>
 
@@ -64,16 +86,89 @@
 
 <section class="article-section-1 split-layout">
   <div class="left-content">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam officiis, dolore doloremque, eveniet modi aspernatur distinctio.
-    </p>
-    <p>
-      You can keep writing here, and the image will stay neatly on the bottom right side without shifting around.
-    </p>
+<p>
+  For any network, there are three basic network devices that must be 
+  included to provide proper connection between devices:
+</p>
+<p>
+  <strong>Switch</strong> – this device establishes the connection between devices within a 
+  network and act as a controller in a LAN (“What is Computer Networking?”,
+   n.d.).
+</p>
+<p>
+  <strong>Router</strong> – this device connects multiple networks together and to the Internet.
+   It acts as a forwarder that chooses the best path to take to send the 
+   information it receives (“What is Computer Networking?”, n.d.).
+</p>
+<p>
+  <strong>Access Point (AP)</strong> – this device allows wireless to create a connection with
+   a network without the use of cables. It acts as an amplifier where a 
+   network’s wireless signal is transmitted across an area to wireless clients
+  (“What is Computer Networking?”, n.d.).
+</p>
   </div>
   <div class="right-image">
-    <img src="../assets/cells.jpg" alt="Descriptive alt text">
+    <img src="../assets/router.jpg" alt="Descriptive alt text">
   </div>
+</section>
+
+<section class="paragraph-container">
+ <div class="paragraph-content">
+  <h2>OSI 7-Layer Model</h2>
+  <p>
+    The Open Systems Interconnection (OSI) 7-Layer Model is a theoretical structure 
+    that separates network communication into seven layers (“What is OSI Model?”,
+     n.d.). Since sending data over a network is quite complex, this framework 
+     makes clear divides in the networking process and provides a universal 
+     language for network administrators, designers, IT professionals, and various technologies 
+     (“SMB University: Selling Cisco,” n.d.) (“What is OSI Model?”, n.d.). Every layer depends 
+     on technologies, protocols, and methods used in the previous layer, with Layer 1 (Physical) 
+     being the foundation. Not all systems that utilize the OSI model apply every layer 
+     (“What is OSI Model?”, n.d.).
+  </p>
+</div>
+</section>
+
+<section class="osi-table-section">
+  <h3>OSI 7-Layer Model (“SMB University: Selling Cisco,” n.d.) (“What is OSI Model?”, n.d.)</h3>
+  <table class="osi-table">
+    <thead>
+      <tr>
+        <th>Layer</th>
+        <th>Explanation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>7. Application Layer</td>
+        <td>The applications themselves and their communication methods (e.g., web browsers using HTTP/HTTPS).</td>
+      </tr>
+      <tr>
+        <td>6. Presentation Layer</td>
+        <td>The formation of data used in the Application layer (e.g., HTML or CSS code, which websites use to display information over the Internet).</td>
+      </tr>
+      <tr>
+        <td>5. Session Layer</td>
+        <td>The network coordination between applications (e.g., NFS or SMB protocols, which establish, synchronize, and end communication between application hosts).</td>
+      </tr>
+      <tr>
+        <td>4. Transport Layer</td>
+        <td>The transmission of data packets in the right order, at the proper rate, and with no errors (e.g., TCP and UDP protocols to send packets from one host to another).</td>
+      </tr>
+      <tr>
+        <td>3. Network Layer</td>
+        <td>The connection, routing, forwarding, and addressing of data packets across a network (e.g., IPv4 and IPv6 protocols to send data frames between two IP addresses).</td>
+      </tr>
+      <tr>
+        <td>2. Data Link Layer</td>
+        <td>The formatting of data into frames and transmission of those frames across physical mediums (e.g., sending data between hosts’ MAC addresses using Ethernet).</td>
+      </tr>
+      <tr>
+        <td>1. Physical Layer</td>
+        <td>The physical mediums and technologies used to send raw data in bits (1’s and 0’s) (e.g., fibre-optic cables, copper cabling, Wi-Fi, Bluetooth, etc.).</td>
+      </tr>
+    </tbody>
+  </table>
 </section>
 
 <section class="article-section-2">

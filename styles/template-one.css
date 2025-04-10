@@ -1,21 +1,14 @@
 .title-container {
     background-size: cover;
     background-position: center;
-    height: 300px;
+    height: 400px;
     display: flex;
     align-items: flex-end;
     padding: 2rem;
     position: relative;
     color: white;
   }
-  
-  .title-overlay {
-    background: rgba(0, 0, 0, 0.4); /* soft dark overlay for text contrast */
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    max-width: 700px;
-  }
-  
+
   .article-title {
     font-size: 2.5rem;
     font-weight: 700;
@@ -34,7 +27,7 @@
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #222; /* or your brand color */
+    color: #222;
     text-align: left;
   }
   
@@ -58,7 +51,7 @@
   }
   
   .horizontal-gallery img {
-    height: 300px; /* Or whatever consistent height you want */
+    height: 300px;
     width: auto;
     object-fit: cover;
     flex-shrink: 0;
@@ -77,7 +70,7 @@
   .split-layout {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end; /* positions the image toward the bottom */
+    align-items: center;
     padding: 4rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -110,12 +103,69 @@
     object-fit: cover;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
-  
-  .article-section-2 {
-    padding: 4rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+
+  .split-layout.reverse {
+    flex-direction: row-reverse;
   }
+
+  @media (max-width: 768px) {
+    .split-layout {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .left-content, .right-image {
+      padding: 0;
+    }
+  }
+
+  .paragraph-container {
+    background-image: url('../assets/layer-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5rem 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .paragraph-content {
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.4); 
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .paragraph-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .paragraph-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #f1f1f1;
+  }
+ 
+  @media (max-width: 768px) {
+    .paragraph-content {
+      padding: 1.5rem;
+    }
+  
+    .paragraph-content h2 {
+      font-size: 1.6rem;
+    }
+  
+    .paragraph-content p {
+      font-size: 1rem;
+    }
+  }
+  
   
   .centered-intro {
     text-align: center;
@@ -172,6 +222,58 @@
     .text-block, .middle-image, .side-paragraph {
       width: 100%;
     }
+  }
+
+
+  /*OSI table styles*/
+  .osi-table-section {
+    margin: 50px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+  }
+
+  .osi-table-section h3{
+    text-align: center;
+    font-size: larger;
+    padding-bottom: 30px;
+  }
+  
+  .osi-table {
+    width: 65%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .osi-table th, .osi-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .osi-table th {
+    background-color: #72c780;
+    color: white;
+  }
+  
+  .osi-table td {
+    background-color: #ffffff;
+  }
+  
+  .osi-table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+  }
+  
+  .osi-table td {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .osi-table th {
+    font-size: 1.1rem;
+    font-weight: bold;
   }
   
   
