@@ -128,16 +128,11 @@ footer .social-links a {
   margin: 0 5px;
 }
 
-/* Light/Dark Mode */
-[data-theme="dark"] {
-  background-color: #1a1a1a;
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  background-color: #4a4d60; /* Same as navbar item color */
   color: white;
-}
-
-[data-theme="dark"] header {
-  background-color: #111;
-}
-
-[data-theme="dark"] .cta-btn {
-  background-color: #007bff;
 }
