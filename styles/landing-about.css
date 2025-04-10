@@ -1,12 +1,24 @@
- /* About Section */
- .about h2 {
-    font-family: "all-round-gothic", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .about {
-    background-color: #f9f9f9;
-    padding: 40px 20px;
-    text-align: center;
-  }
+/* About Section */
+.about {
+  background-color:linear-gradient(#f4f6f7, #a5bece);
+  padding: 40px 20px; /* Keeps some padding but can be reduced */
+  text-align: center;
+  max-width: 1000px; /* Limits the width of the section */
+  margin: 0 auto; /* Centers the section */
+}
+
+.about h2 {
+  font-family: "all-round-gothic", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2rem; /* Optional: Adjust the size of the heading to make it more compact */
+  margin-bottom: 1rem; /* Adds some space below the heading */
+}
+
+.about p {
+  font-size: 1rem; /* Adjust font size to make it smaller */
+  line-height: 1.6; /* Adjust line spacing for better readability */
+  max-width: 1000px; /* Prevents the paragraph from becoming too wide */
+  margin: 0 auto; /* Centers the paragraph */
+  padding: 0 20px; /* Adds some padding to the sides to avoid touching the edges */
+}
