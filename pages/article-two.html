@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ascend</title>
+  <link rel="stylesheet" href="../styles/universal.css" />
+  <link rel="stylesheet" href="../styles/template-two.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/iof4yyq.css" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="sticky-menu">
+    <img src="../assets/ascend-logo.png" alt="Image of ascend logo with a swoop over the word to represent an elevation of knowledge." class="logo" />
+    
+    <div class="hamburger" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <nav id="nav">
+      <ul>
+        <li class="search-bar">
+          <form action="#" method="GET">
+            <input class="search" type="text" placeholder="Search..." name="search" />
+            <button class="submit submit-fill" type="submit">Search</button>
+          </form>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/explore.html">Explore</a></li>
+        <li><a href="pages/about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Title Section -->
+  <section class="title-container" style="background-image: url('../assets/it.jpg');">
+    <section class="left">
+      <div class="title-overlay">
+        <h1>Network Virtualization Research</h1>
+      </div>
+    </section>
+    <section class="right"></section>
+  </section>
+
+  <!-- Intro Text Section -->
+  <section class="photo-text-container">
+    <div class="photo">
+      <img src="../assets/it.jpg" alt="Server hardware used in IT environments" />
+    </div>
+    <div class="text">
+      <h2>What is Virtualization?</h2>
+      <p>Virtualization is a technology that creates a simulated, or virtual, computing environment as an alternative to a physical one (Microsoft, n.d.-b).</p><br>
+      <p>A <strong>Hypervisor</strong> is a key software layer that manages multiple <strong>virtual machines (VMs)</strong> on a single computer (Shamir, 2024). It ensures that each VM receives its allotted resources without interfering with others (IBM, 2023).</p><br>
+      <p>This process often includes virtual versions of hardware, operating systems, and storage, allowing organizations to run several VMs independently on one physical machine. Each VM operates as an isolated system with its own OS and apps—sharing the underlying hardware (Redhat, 2018).</p>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <h2 class="section-heading">Virtual Machines and Hypervisors</h2>
+    <div class="content-wrapper">
+      <div class="text-columns">
+        <div class="column">
+          <p>Two core elements of virtualization are <strong>hypervisors</strong> and <strong>virtual machines</strong> (AWS, n.d.). The hypervisor is responsible for allocating resources across multiple VMs and ensuring smooth, isolated operations (IBM, 2023). Each VM acts as a full computing system with its own OS and software, created using a pool of hardware resources (Microsoft, n.d.-a).</p>
+        </div>
+
+        <div class="column">
+          <p>There are two main types of hypervisors (Redhat, 2018):</p><br>
+
+          <p><strong>Type 1 (Bare-Metal) Hypervisor:</strong><br>
+            Installed directly onto the hardware, this hypervisor doesn't rely on an underlying OS. Because of its direct integration with the system, it offers high performance and is ideal for enterprise environments (AWS, n.d.).</p><br>
+
+          <p><strong>Type 2 (Hosted) Hypervisor:</strong><br>
+            Runs on top of an existing operating system. While it may not match the raw performance of Type 1, it’s more accessible and user-friendly—perfect for personal use and smaller-scale operations (IBM, 2023).</p>
+        </div>
+      </div>
+
+      <div class="image-block">
+        <img src="../assets/it.jpg" alt="Illustration of virtualization layers and hypervisors" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Types of Virtualization -->
+  <section class="virtualization-section">
+    <div class="intro">
+      <h2>Types of Virtualization</h2>
+      <p>
+        Virtualization is used to replicate many different kinds of infrastructure within a software environment (AWS, n.d.). While there are several use cases, the four major types of virtualization (Microsoft, n.d.-b) include:
+      </p>
+    </div>
+
+    <div class="virtualization-types">
+      <div class="type">
+        <h3>Desktop Virtualization</h3>
+        <p>Allows a single server to manage multiple user desktops, offering centralized control and improved security (Microsoft, n.d.-b).</p>
+      </div>
+
+      <div class="type">
+        <h3>Network Virtualization</h3>
+        <p>Abstracts physical networking hardware into software. Administrators can manage network services without accessing physical routers or switches, streamlining control (IBM, 2023).</p>
+      </div>
+
+      <div class="type">
+        <h3>Software Virtualization</h3>
+        <p>Runs applications in isolated containers, decoupled from the host OS and hardware. This enhances flexibility and application compatibility (Microsoft, n.d.-b).</p>
+      </div>
+
+      <div class="type">
+        <h3>Storage Virtualization</h3>
+        <p>Merges physical storage devices into one virtual storage pool. This unified view simplifies management and makes shared access easier (AWS, n.d.).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="virtualization-benefits">
+    <div class="intro">
+      <h2>Benefits of Virtualization</h2>
+      <p>
+        Virtualization is reshaping IT operations. It allows multiple operating systems to run side by side, improving efficiency and making resource allocation more flexible (Shamir, 2024).
+      </p>
+      <p>Key benefits include:</p>
+    </div>
+
+    <div class="benefits-list">
+      <div class="benefit">
+        <h3>Server Consolidation</h3>
+        <p>Run multiple VMs on a single physical server to reduce energy use, physical space, and maintenance costs (Redhat, 2018).</p>
+      </div>
+
+      <div class="benefit">
+        <h3>Cost Savings</h3>
+        <p>Minimize hardware requirements and operational expenses by maximizing use of existing resources (Microsoft, n.d.-a).</p>
+      </div>
+
+      <div class="benefit">
+        <h3>Isolated Environments</h3>
+        <p>VMs operate independently, making them perfect for software testing or running different OS environments without risk (Redhat, 2018).</p>
+      </div>
+
+      <div class="benefit">
+        <h3>Application Portability</h3>
+        <p>VMs can be cloned, migrated, or scaled easily, offering greater flexibility compared to traditional hardware systems (“What Is Virtualization?”, 2024).</p>
+      </div>
+
+      <div class="benefit">
+        <h3>Scalability</h3>
+        <p>Scale up resources by adding more virtual or physical machines, boosting performance without downtime (Microsoft, n.d.-a).</p>
+      </div>
+
+      <div class="benefit">
+        <h3>Disaster Recovery</h3>
+        <p>Virtual environments support rapid backup and recovery, reducing downtime in the event of a system failure (AWS, n.d.).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ascend. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">TikTok</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="scripts/universal-script.js"></script>
+  <script src="scripts/featured-script.js"></script>
+</body>
+</html>
