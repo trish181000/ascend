@@ -78,12 +78,29 @@ nav ul li a:hover {
   transform: scale(1.2);
 }
 
-.search {
+/* Search Bar Section */
+.search-bar form {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  width: fit-content;
+  }
+
+/* Search Input */
+.search-bar .search {
+  font-family: "articulat-cf", sans-serif;
+  font-style: italic;
   height: 30px;
+  width: 280px;
   border-radius: 15px;
   border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 20px; /* space between search and button */
 }
 
+/* Submit Search Button */
 .submit {
   border: none;
   outline: none;
@@ -95,6 +112,8 @@ nav ul li a:hover {
   position: relative;
   overflow: hidden;
   transition: color 0.5s;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .submit::before {
@@ -118,6 +137,7 @@ nav ul li a:hover {
   left: -40px;
 }
 
+/* Submit Filled Style */
 .submit-fill {
   color: #e7ecee;
   border: 2px solid #e7ecee;
@@ -185,6 +205,20 @@ nav ul li a:hover {
   header nav.active ul {
     display: flex;
   }
+  .search-bar form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-bar .search {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .submit {
+    width: 100%;
+  }
 }
 
 /* For very small screens (mobile portrait) */
@@ -196,17 +230,34 @@ nav ul li a:hover {
   header nav ul li a {
     font-size: 1rem;
   }
-  .submit {
-    width: 60px;
-    height: 25px;
+  .search-bar .search {
+    font-size: 0.95rem;
+    height: 28px;
   }
-  
-  .submit:hover {
-    color: rgb(255, 255, 255);
-    background: rgb(51, 51, 51);
+  .search-bar form {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .search-bar .search {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    padding-left: 15px;
+  }
+
+  .submit {
+    width: 100%;
+    font-size: 0.95rem;
+    height: 35px;
+  }
+
+  .submit-fill {
+    border-width: 1.5px;
   }
 }
-
 
 /* Footer Section */
 footer {
