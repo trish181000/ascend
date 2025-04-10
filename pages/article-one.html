@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ascend - Networking 101: From Connections to Security</title>
+  <link rel="stylesheet" href="../styles/universal.css">
+  <link rel="stylesheet" href="../styles/template-one.css">
+  <link rel="stylesheet" href="https://use.typekit.net/iof4yyq.css">
+</style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="sticky-menu">
+    <img src="../assets/ascend-logo.png" alt="Image of ascend logo, 
+    with a swoop over the word to reperesnt an elevation of knowlege." class="logo">
+
+  <div class="hamburger" id="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+
+    <nav id="nav">
+    <ul>
+       <li class="search-bar">
+        <form action="#" method="GET">
+          <input class="search" type="text" placeholder="Search..." name="search">
+          <button class="submit submit-fill" type="submit">Search</button>
+        </form>
+      </li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="pages/explore.html">Explore</a></li>
+      <li><a href="pages/about.html">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="title-container" style="background-image: url('../assets/networking-101.jpg');">
+    <h1 class="article-title">Networking 101: From Connections to Security</h1>
+  </div>
+</section>
+
+<section class="intro-container">
+<div class="article-intro-1">
+    <h2>Computer Networking</h2>
+    <p>
+      The process of bridging two or more computing devices to facilitate
+       the communication of information and resources though physical or 
+       wireless mediums (“What is computer networking?”, 2024) (“SMB 
+       University: Selling Cisco,” n.d.). When these devices have indeed
+        formed connections between each other, we call this a network.
+    </p>
+    <p>
+      While there are many different types of networks, two basic setups will be discussed:
+    </p>
+    <p>
+      Local Area Network (LAN) – a collection of connected devices in one 
+      physical location (“What is computer networking?”, 2024) (“What is 
+      Computer Networking?”, n.d.) (“SMB University: Selling Cisco,” n.d.).
+       A LAN can vary in size and include both wired and wireless devices 
+       (“What is computer networking?”, 2024) (“What is Computer Networking?”, 
+       n.d.) (“SMB University: Selling Cisco,” n.d.).
+    </p>
+    <p>
+      Wide Area Network (WAN) – a collection of LANs and/or individual devices
+       that stretches over a large geographical area (“What is computer 
+       networking?”, 2024) (“What is Computer Networking?”, n.d.) (“SMB 
+       University: Selling Cisco,” n.d.). WANs are typically used by large 
+       organizations and government bodies (“What is computer networking?”, 
+       2024) (“What is Computer Networking?”, n.d.) (“SMB University: Selling
+        Cisco,” n.d.).
+    </p>
+</div>
+</section>
+
+<section class="article-gallery">
+  <div class="horizontal-gallery">
+    <img src="../assets/vpn.jpg" alt="Description of image 2">
+    <img src="../assets/virtual-cloud.jpg" alt="Description of image 4">
+    <img src="../assets/networking-101.jpg" alt="Description of image 3">
+    <img src="../assets/abstract-network.jpg" alt="Description of image 1">
+  </div>
+</section>
+
+<section class="article-section-1 split-layout">
+  <div class="left-content">
+<p>
+  For any network, there are three basic network devices that must be 
+  included to provide proper connection between devices:
+</p>
+<p>
+  <strong>Switch</strong> – this device establishes the connection between devices within a 
+  network and act as a controller in a LAN (“What is Computer Networking?”,
+   n.d.).
+</p>
+<p>
+  <strong>Router</strong> – this device connects multiple networks together and to the Internet.
+   It acts as a forwarder that chooses the best path to take to send the 
+   information it receives (“What is Computer Networking?”, n.d.).
+</p>
+<p>
+  <strong>Access Point (AP)</strong> – this device allows wireless to create a connection with
+   a network without the use of cables. It acts as an amplifier where a 
+   network’s wireless signal is transmitted across an area to wireless clients
+  (“What is Computer Networking?”, n.d.).
+</p>
+  </div>
+  <div class="right-image">
+    <img src="../assets/router.jpg" alt="Descriptive alt text">
+  </div>
+</section>
+
+<section class="paragraph-container">
+ <div class="paragraph-content">
+  <h2>OSI 7-Layer Model</h2>
+  <p>
+    The Open Systems Interconnection (OSI) 7-Layer Model is a theoretical structure 
+    that separates network communication into seven layers (“What is OSI Model?”,
+     n.d.). Since sending data over a network is quite complex, this framework 
+     makes clear divides in the networking process and provides a universal 
+     language for network administrators, designers, IT professionals, and various technologies 
+     (“SMB University: Selling Cisco,” n.d.) (“What is OSI Model?”, n.d.). Every layer depends 
+     on technologies, protocols, and methods used in the previous layer, with Layer 1 (Physical) 
+     being the foundation. Not all systems that utilize the OSI model apply every layer 
+     (“What is OSI Model?”, n.d.).
+  </p>
+</div>
+<section class="osi-table-section">
+  <h3>OSI 7-Layer Model (“SMB University: Selling Cisco,” n.d.) (“What is OSI Model?”, n.d.)</h3>
+  <table class="osi-table">
+    <thead>
+      <tr>
+        <th>Layer</th>
+        <th>Explanation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>7. Application Layer</td>
+        <td>The applications themselves and their communication methods (e.g., web browsers using HTTP/HTTPS).</td>
+      </tr>
+      <tr>
+        <td>6. Presentation Layer</td>
+        <td>The formation of data used in the Application layer (e.g., HTML or CSS code, which websites use to display information over the Internet).</td>
+      </tr>
+      <tr>
+        <td>5. Session Layer</td>
+        <td>The network coordination between applications (e.g., NFS or SMB protocols, which establish, synchronize, and end communication between application hosts).</td>
+      </tr>
+      <tr>
+        <td>4. Transport Layer</td>
+        <td>The transmission of data packets in the right order, at the proper rate, and with no errors (e.g., TCP and UDP protocols to send packets from one host to another).</td>
+      </tr>
+      <tr>
+        <td>3. Network Layer</td>
+        <td>The connection, routing, forwarding, and addressing of data packets across a network (e.g., IPv4 and IPv6 protocols to send data frames between two IP addresses).</td>
+      </tr>
+      <tr>
+        <td>2. Data Link Layer</td>
+        <td>The formatting of data into frames and transmission of those frames across physical mediums (e.g., sending data between hosts’ MAC addresses using Ethernet).</td>
+      </tr>
+      <tr>
+        <td>1. Physical Layer</td>
+        <td>The physical mediums and technologies used to send raw data in bits (1’s and 0’s) (e.g., fibre-optic cables, copper cabling, Wi-Fi, Bluetooth, etc.).</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+</section>
+
+<section class="article-section-2">
+  <div class="horizontal-layout">
+    <div class="text-block">
+      <div class="subheading">
+      </div>
+      <p>
+        <strong>HTTP/HTTPS</strong> – Hypertext Transfer Protocol / Hypertext Transfer Protocol Secure are layer 7 protocols that facilitate communication between two or more web clients (“Types of Network Protocols and Their Uses”, 2024).
+      </p>
+      <p>
+        <strong>NFS</strong> – Network File System is a file sharing solution that allows two or more computers to access and transfer files (“Network File System overview”, 2024).
+      </p>
+      <p>
+        <strong>SMB</strong> – Server Message Block is a file sharing solution that allows computer applications to read and write to files (“Overview of file sharing using,” 2025).
+      </p>
+      <p>
+        <strong>TCP</strong> – Transmission Control Protocol is a connection protocol that establishes connection between applications before sending data (“Types of Network Protocols and Their Uses”, 2024).
+      </p>
+      <p>
+        <strong>UDP</strong> – User Datagram Protocol is a connection protocol that establishes a fast but unreliable connection between applications and is typically used when reliability is not required (“Types of Network Protocols and Their Uses”, 2024).
+      <p>
+        <strong>IPv4/IPv6</strong> – A standard which defines in which the network layers of two devices communicate [3][8].
+      </p>
+    </div>
+
+    <div class="middle-image">
+      <img src="../assets/satellite.jpg" alt="Descriptive alt text">
+    </div>
+
+    <div class="side-paragraph">
+      <p>
+        <strong>IP Address</strong> – A 32-bit logical addressing scheme (“SMB University: Selling Cisco,” n.d.) (“IP Networking Basics”, n.d.).
+      </p>
+      <p>
+        <strong>MAC Address</strong> – Media Access Control addresses are unique hardware identifiers that are protocol-independent (“SMB University: Selling Cisco,” n.d.).
+      </p>
+      <p>
+        <strong>Ethernet</strong> – A connection technology that operates at layers 2 and 3 of the OSI model. It allows two or more devices to communicate with each other via physical cabling (“What Is Ethernet?”, n.d.).
+      </p>
+      <p>
+        <strong>Fibre-optic</strong> – A connection technology that sends data in the form of pulses of light through threads of glass (“What Is Fiber Optics?”, 2024).
+      </p>
+      <p>
+        <strong>Wi-Fi</strong> – A wireless connection technology that uses radio waves to transmit data between two or more devices through frequencies (Lohnes, 2024).
+      </p>
+      <p>
+        <strong>Bluetooth</strong>  – A short-range wireless connection technology that sends data between two or more devices in a peer-to-peer connection and without the need for wireless routers or access points (“What Is Bluetooth® Technology?”, n.d.).
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="article-section-1 split-layout">
+  <div class="left-content">
+    <h2>Network Security</h2>
+    <p>
+      <strong>Network Security</strong> is the design and practice of protecting a network; this includes its data, 
+      resources, clients, connection methods, usability, and accessibility (“What Is Network Security?”, n.d.). It 
+      achieves this using hardware and software technologies, methods, protocols, policies, and controls (“What Is 
+      Network Security?”, n.d.). By combining multiple layers of this security, a network is provided with comprehensive 
+      protection from unauthorized access, hackers, and vulnerabilities (“What Is Network Security?”, n.d.); this is also known as 
+      <strong>Defense in Depth</strong>. Examples of network security include firewalls, email security, anti-virus 
+      and anti-malware software, network segmentation, access control, application security, and data loss prevention
+       (“What Is Network Security?”, n.d.).
+    </p>
+    <p>
+      <strong>Defense in Depth</strong> – An information security strategy that utilizes people, technology, and operations to create protective barriers across multiple layers of a network (“defense-in-depth”, n.d.).
+    </p>
+  </div>
+  <div class="right-image">
+    <img src="../assets/security.jpg" alt="Descriptive alt text">
+  </div>
+</section>
+
+<!--Footer Sction-->
+<footer>
+  <p>&copy; 2025 ascend. All rights reserved.</p>
+  <div class="social-links">
+    <a href="#">TikTok</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+  </div>
+</footer>
+
+<button id="backToTop" title="Back to top">↑</button>
+<script src="../scripts/universal-script.js"></script>
+<script src="../scripts/featured-script.js"></script>
+</body>
+</html>

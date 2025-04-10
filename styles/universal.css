@@ -128,26 +128,6 @@ footer .social-links a {
   margin: 0 5px;
 }
 
-/* Scroll Effects */
-.shrink header {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px 30px;
-}
-
-.shrink .logo {
-  font-size: 1.5rem;
-}
-
-.shrink .hero {
-  padding: 50px 20px;
-  height: 60vh;
-  opacity: 0.8;
-}
-
-.shrink .hero h2 {
-  font-size: 2.5rem;
-}
-
 /* Light/Dark Mode */
 [data-theme="dark"] {
   background-color: #1a1a1a;
