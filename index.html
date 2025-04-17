@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ascend</title>
@@ -15,29 +16,32 @@
 
   <!-- Header Section -->
   <header class="sticky-menu">
-      <img src="assets/ascend-logo-white.png" alt="Image of ascend logo, 
-      with a swoop over the word to reperesnt an elevation of knowlege." class="logo">
+    <a href="/ascend-main/index.html">
+        <img src="../ascend-main/assets/ascend-logo-white.png" 
+             alt="Image of ascend logo with a swoop over the word to represent an elevation of knowledge." 
+             class="logo"/>
+    </a>
   
-    <div class="hamburger" id="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+    <div class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
     </div>
   
     <nav id="nav">
-      <ul>
-         <li class="search-bar">
-          <form action="#" method="GET">
-            <input class="search" type="text" placeholder="What do you want to learn today?" autocomplete="off">
-            <button class="submit submit-fill" type="submit">Search</button>
-          </form>
-        </li>
-        <li><a href="pages/index.html">Home</a></li>
-        <li><a href="pages/explore.html">Explore</a></li>
-        <li><a href="pages/about.html">About</a></li>
-      </ul>
+        <ul>
+            <li class="search-bar">
+                <form action="#" method="GET">
+                    <input class="search" type="text" placeholder="What do you want to learn today?" autocomplete="off" aria-label="Search input">
+                    <button class="submit submit-fill" type="submit" aria-label="Search button">Search</button>
+                </form>
+            </li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="pages/explore.html">Explore</a></li>
+            <li><a href="pages/about.html">About</a></li>
+        </ul>
     </nav>
-  </header>
+</header>
 
   <!-- Hero Section -->
   <section class="hero" id="hero">

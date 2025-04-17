@@ -1,0 +1,200 @@
+/* === Hardware Types and Network Interface Card === */
+.hardware-types,
+.network-interface-card {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 40px;
+}
+
+.hardware-types ul {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+.hardware-types li {
+  margin-bottom: 8px;
+}
+
+.network-interface-card {
+  background-color: #e3f2fd;
+  border-left: 6px solid #1e88e5;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.network-interface-card h3 {
+  color: #1e5799;
+  margin-bottom: 12px;
+}
+
+.network-interface-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* New Table Styles (Complementary to Existing) */
+.hardware-types h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #1e5799;
+}
+
+.hardware-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+
+.hardware-table th, 
+.hardware-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.hardware-table th {
+    background-color: #72c780;
+    color: white;
+  font-weight: 500;
+}
+
+.hardware-table td {
+  background-color: #ffffff;
+  vertical-align: top;
+}
+
+.hardware-table tr:nth-child(even) td {
+  background-color: #f5f9ff;
+}
+
+.hardware-table td strong {
+  color: #1a237e;
+}
+
+.hardware-table tr:hover td {
+  background-color: #e3f2fd;
+}
+
+/* Tip section styling */
+.tip {
+    background-color: #eeeeee;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tip strong {
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .tip-video {
+    margin-top: 20px;
+  }
+  
+  .tip iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 10px;
+  }
+
+/* Two Column Activity/Safety Layout
+.activity-safety-container {
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .activity-safety-columns {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .activity-column {
+    flex: 2;
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .safety-column {
+    flex: 1;
+    background-color: #fff8f8;
+    padding: 25px;
+    border-left: 4px solid #ff6b6b;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  } 
+  
+  /*/* Activity Section Styling 
+  .activity h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  
+  .activity h3 {
+    color: #3498db;
+    margin: 20px 0 10px;
+    font-size: 1.3rem;
+  }
+  
+  .activity ul, 
+  .activity ol {
+    margin-left: 20px;
+    padding-left: 15px;
+  }
+  
+  .activity li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  
+  .activity p {
+    margin: 15px 0;
+    line-height: 1.6;
+  }
+  
+  .activity strong {
+    color: #e74c3c;
+  }
+  
+  /* Safety Section Styling 
+  .safety {
+    margin-top: 0;
+  }
+  
+  .safety strong:first-child {
+    display: block;
+    color: #e74c3c;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .safety ul {
+    margin-left: 20px;
+    padding-left: 15px;
+  }
+  
+  .safety li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .safety p {
+    margin-top: 15px;
+    font-style: italic;
+    line-height: 1.6;
+  }
+  
+  .safety strong {
+    color: #e74c3c;
+  } */
