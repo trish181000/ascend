@@ -18,16 +18,12 @@ body {
 /*Header Styles */
 header {
   position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
   z-index: 10;
   background-color: transparent;
-  transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
 .sticky-menu {
@@ -177,10 +173,10 @@ nav ul li a:hover {
   }
 
   header nav ul {
-    display: none; /* Hide the menu by default */
+    display: none; 
     flex-direction: column;
     position: absolute;
-    top: 70px; /* Adjust to align below the header */
+    top: 100px;
     right: 0;
     background-color: #f4f6f7;
     width: 100%;
