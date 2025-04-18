@@ -31,7 +31,7 @@ header {
 }
 
 .sticky-menu {
-  background: #4a4d60;
+  background: #f4f6f7;
   position: relative;
   top: 0;
   left: 0;
@@ -66,7 +66,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #e7ecee;
+  color: #4a4d60;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease, transform 0.3s ease;
@@ -139,8 +139,8 @@ nav ul li a:hover {
 
 /* Submit Filled Style */
 .submit-fill {
-  color: #e7ecee;
-  border: 2px solid #e7ecee;
+  color: #4a4d60;
+  border: 2px solid #72c780;
 }
 
 .submit-fill::before {
@@ -219,6 +219,9 @@ nav ul li a:hover {
   .submit {
     width: 100%;
   }
+
+  
+  
 }
 
 /* For very small screens (mobile portrait) */
@@ -261,7 +264,7 @@ nav ul li a:hover {
 
 /* Footer Section */
 footer {
-  background-color: #333;
+  background-color: #4a4d60;
   color: white;
   text-align: center;
   padding: 20px;
