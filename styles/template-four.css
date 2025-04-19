@@ -1,0 +1,250 @@
+/* Photo-Text Container */
+.photo-text-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+    align-items: center;
+}
+
+.photo {
+    flex: 1;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.text {
+    flex: 1;
+}
+
+.text h2 {
+    color: var(--secondary);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e3f2fd;
+}
+
+.text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text strong {
+    color: #1a237e;
+}
+
+/* Hardware Components Section */
+.hardware-types {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 40px;
+}
+
+.hardware-types h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--secondary);
+    position: relative;
+}
+
+.hardware-types h2:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: var(--accent);
+    margin: 15px auto 0;
+}
+
+.hardware-types > p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.hardware-categories {
+    margin-bottom: 50px;
+}
+
+.hardware-categories h3 {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    margin: 40px 0 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.hardware-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 40px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+
+.hardware-table th, 
+.hardware-table td {
+    padding: 18px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.hardware-table th {
+    background-color: var(--accent);
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.hardware-table td {
+    background-color: #ffffff;
+    vertical-align: top;
+    line-height: 1.6;
+}
+
+.hardware-table tr:nth-child(even) td {
+    background-color: #f5f9ff;
+}
+
+.hardware-table td strong {
+    color: var(--secondary);
+}
+
+.hardware-table tr:hover td {
+    background-color: #e3f2fd;
+}
+
+.supporting-components {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.supporting-components h3 {
+    font-size: 1.5rem;
+    color: var(--secondary);
+    margin-bottom: 20px;
+}
+
+.supporting-components p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.supporting-components ul {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.supporting-components li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.supporting-components strong {
+    color: var(--secondary);
+}
+
+/* Activity/Safety Section */
+.activity-safety-container {
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.activity-safety-columns {
+    display: flex;
+    gap: 30px;
+}
+
+.activity-column {
+    flex: 2;
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--accent);
+}
+
+.safety-column {
+    flex: 1;
+    background-color: #fff8f8;
+    padding: 25px;
+    border-left: 4px solid #ff6b6b;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.activity h2 {
+    color: var(--secondary);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.activity h3 {
+    color: var(--primary);
+    margin: 20px 0 10px;
+    font-size: 1.3rem;
+}
+
+.activity ul, 
+.activity ol {
+    margin-left: 20px;
+    padding-left: 15px;
+}
+
+.activity li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.activity p {
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.activity strong {
+    color: #e74c3c;
+}
+
+.safety {
+    margin-top: 0;
+}
+
+.safety strong:first-child {
+    display: block;
+    color: #e74c3c;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.safety ul {
+    margin-left: 20px;
+    padding-left: 15px;
+}
+
+.safety li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.safety p {
+    margin-top: 15px;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.safety strong {
+    color: #e74c3c;
+}
