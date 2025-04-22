@@ -228,15 +228,25 @@
       white-space: nowrap; /* Keeps the text on one line */
       overflow: hidden; /* Optional: hides overflow if it's too long */
     }
+
+    .title-overlay-light {
+      padding: 1rem 2rem;
+      border-radius: 25px;
+      max-width: 650px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      white-space: nowrap; /* Keeps the text on one line */
+      overflow: hidden; /* Optional: hides overflow if it's too long */
+    }
   
     .title-overlay h1 {
       font-size: 35px; /* Adjust for better mobile fitting */
       white-space: nowrap; /* Makes sure the heading stays on one line */
     }
-
-    
   }
-  
 
   /* Mobile view (≤480px) */
 @media (max-width: 480px) {
@@ -247,6 +257,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
+    white-space: nowrap;
     transform: translate(-50%, -50%);
   }
 
@@ -254,5 +265,4 @@
     font-size: 25px;
     white-space: nowrap;
   }
-
 }
