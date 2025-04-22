@@ -220,6 +220,7 @@ nav ul li a:hover {
   
 }
 
+
 /* For very small screens (mobile portrait) */
 @media (max-width: 480px) {
   .logo {
@@ -256,7 +257,22 @@ nav ul li a:hover {
   .submit-fill {
     border-width: 1.5px;
   }
-}
+
+  /*Search Bar*/
+  nav ul {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .search {
+    width: 100%;
+  }
+}  
 
 /* Footer Section */
 footer {
