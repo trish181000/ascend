@@ -31,7 +31,7 @@
     padding: 1rem 2rem;
     border-radius: 8px;
     max-width: 700px;
-    color: #fff;
+    color: #e7ecef;
   }
   
   /* Photo & Text Side-by-Side Section */
@@ -39,12 +39,11 @@
     display: flex;
     justify-content: center;
     padding: 4rem 1rem;
-    background-color: #f9f9f9;
+    background-color: #e7ecef;
   }
-  
+
   .content {
     display: flex;
-    align-items: center;
     gap: 2rem;
     max-width: 1000px;
     width: 100%;
@@ -63,17 +62,13 @@
   
   .text {
     max-width: 700px;
-    text-align: justify;
+    text-align:justify;
+    padding: 2rem;
   }
   
   .text h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-  }
-  
-  .text p {
-    font-size: 1rem;
-    line-height: 1.6;
   }
   
   /* Info Section with Columns */
@@ -203,6 +198,19 @@
     font-size: 0.95rem;
     line-height: 1.5;
   }
+
+  .supporting-components ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  /*References*/
+  .intro-container ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 12px;
+    line-height: 20px;
+  }
   
   /* Responsive Media Queries */
   @media (max-width: 768px) {
@@ -231,3 +239,26 @@
       text-align: center;
     }
   }
+
+  /* Mobile view (≤480px) */
+@media (max-width: 480px) {
+  .title-overlay {
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    max-width: 650px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .title-overlay h1 {
+    font-size: 25px;
+    white-space: nowrap;
+  }
+
+.text {
+  max-width: 700px;  
+}
+
+}

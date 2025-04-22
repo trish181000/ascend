@@ -1,4 +1,5 @@
 /* === Hardware Types and Network Interface Card === */
+
 .hardware-types,
 .network-interface-card {
   max-width: 900px;
@@ -17,13 +18,13 @@
 
 .network-interface-card {
   background-color: #e3f2fd;
-  border-left: 6px solid #1e88e5;
+  border-left: 6px solid #4a4d60;
   padding: 20px;
   margin-top: 40px;
 }
 
 .network-interface-card h3 {
-  color: #1e5799;
+  color: #4a4d60;
   margin-bottom: 12px;
 }
 
@@ -32,12 +33,12 @@
   margin-bottom: 20px;
 }
 
-/* New Table Styles (Complementary to Existing) */
+/* New Table Styles*/
 .hardware-types h2 {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 30px;
-  color: #1e5799;
+  color: #4a4d60;
 }
 
 .hardware-table {
@@ -70,16 +71,22 @@
 }
 
 .hardware-table td strong {
-  color: #1a237e;
+  color:#4a4d60;
 }
 
 .hardware-table tr:hover td {
   background-color: #e3f2fd;
 }
 
-/* Tip section styling */
+.theory-list ul {
+  list-style-type: none;
+  padding-left: 0; /* removes the default indentation */
+  margin: 0; /* optional: resets default margin */
+}
+
+/*Video*/
 .tip {
-    background-color: #eeeeee;
+    background-color: #e7ecef;
     padding: 30px;
     margin: 40px auto;
     max-width: 800px;
@@ -103,4 +110,16 @@
     max-width: 560px;
     height: 315px;
     border-radius: 10px;
+  }
+
+   /* Mobile view (≤480px) */
+   @media (max-width: 480px) {
+    .tip {
+      max-width: 400px;
+      border-radius: 25px;
+    }
+
+    .tip iframe {
+      max-width: 400px;
+   }
   }
