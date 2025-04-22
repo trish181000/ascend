@@ -27,7 +27,7 @@ header {
 }
 
 .sticky-menu {
-  background: #f4f6f7;
+  background: #c1d6e2; /* or #e7ecef*/
   position: relative;
   top: 0;
   left: 0;
