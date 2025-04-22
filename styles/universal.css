@@ -258,6 +258,8 @@ nav ul li a:hover {
     border-width: 1.5px;
   }
 
+
+  @media (min-width: 768px) {
   /*Search Bar*/
   nav ul {
     flex-direction: column;
@@ -272,6 +274,7 @@ nav ul li a:hover {
   .search {
     width: 100%;
   }
+}  
 }  
 
 /* Footer Section */

@@ -213,32 +213,30 @@
   }
   
   /* Responsive Media Queries */
-  @media (max-width: 768px) {
-    .title-container,
-    .photo-text-container,
-    .content-wrapper {
-      flex-direction: column;
-      padding: 2rem 1rem;
-    }
-  
-    .left, .right, .column, .text {
-      flex: 1 1 100%;
+  /* Tablet View*/
+
+  @media (min-width: 768px) {
+    .title-overlay {
+      padding: 1rem 2rem;
+      border-radius: 25px;
+      max-width: 650px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
       text-align: center;
+      white-space: nowrap; /* Keeps the text on one line */
+      overflow: hidden; /* Optional: hides overflow if it's too long */
     }
   
-    .photo img {
-      margin: 0 auto 2rem;
+    .title-overlay h1 {
+      font-size: 35px; /* Adjust for better mobile fitting */
+      white-space: nowrap; /* Makes sure the heading stays on one line */
     }
-  
-    .text-columns {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .section-heading {
-      text-align: center;
-    }
+
+    
   }
+  
 
   /* Mobile view (≤480px) */
 @media (max-width: 480px) {
@@ -256,9 +254,5 @@
     font-size: 25px;
     white-space: nowrap;
   }
-
-.text {
-  max-width: 700px;  
-}
 
 }

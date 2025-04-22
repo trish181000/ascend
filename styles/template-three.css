@@ -1,4 +1,5 @@
 /* === Hardware Types and Network Interface Card === */
+/*Cells*/
 
 .hardware-types,
 .network-interface-card {
@@ -112,14 +113,25 @@
     border-radius: 10px;
   }
 
-   /* Mobile view (≤480px) */
+   /* Tablet */
+   @media (min-width: 768px) {
+    .tip {
+      max-width: 650px;
+    }
+
+    .tip iframe {
+      max-width: 550px;
+   }
+  }
+
+   /* Mobile view*/
    @media (max-width: 480px) {
     .tip {
-      max-width: 400px;
+      max-width: 350px;
       border-radius: 25px;
     }
 
     .tip iframe {
-      max-width: 400px;
+      max-width: 300px;
    }
   }
