@@ -33,6 +33,11 @@
   color: #e7ecef;
 }
 
+.title-overlay h1{
+  font-size: 35px;
+  text-align: center;
+}
+
 .title-overlay p {
   font-size: 25px;
   text-align: center;
@@ -263,7 +268,7 @@
   }
 
   .title-overlay h1 {
-    font-size: 35px;
+    font-size: 25px;
     white-space: nowrap;
   }
 
