@@ -32,6 +32,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
   }
   
   .hero h2 {
@@ -48,11 +51,8 @@
     border: none;
     outline: none;
     background: none;
-    text-align: center;
     width: 70px;
     height: 30px;
-    position: relative;
-    overflow: hidden;
     transition: color 0.5s;
   }
   
@@ -68,11 +68,11 @@
   transition: 0.7s;
 } 
  
-.hero.button:hover {
+.hero .button:hover {
   color: rgb(255, 255, 255);
 } 
  
-.hero.cta-btn::before {
+.hero .cta-btn::before {
   top: -40px;
   left: -40px;
 } 
@@ -177,6 +177,7 @@ font-weight: 00;
   }
 
   .btn-fill {
+    
       width: 100%;
       max-width: 200px;
   }
