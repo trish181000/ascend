@@ -107,6 +107,8 @@
   .split-layout.reverse {
     flex-direction: row-reverse;
   }
+
+/*Tablet*/
   @media (max-width: 768px) {
     .split-layout {
       flex-direction: column;
@@ -165,10 +167,13 @@
     }
   }
   
- .aricle-section-2{
-  max-width: 80%;
-  padding: 2rem 1rem;
- }
+  .article-section-2 {
+    max-width: 80%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+  }
+  
+
   .horizontal-layout {
     display: flex;
     gap: 2rem;

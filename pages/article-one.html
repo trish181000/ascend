@@ -6,8 +6,10 @@
   <title>ascend - Networking 101: From Connections to Security</title>
   <link rel="stylesheet" href="../styles/universal.css">
   <link rel="stylesheet" href="../styles/template-one.css">
+  <link rel="stylesheet" href="../styles/template-two.css">
+  <link rel="stylesheet" href="../styles/template-three.css">
   <link rel="stylesheet" href="https://use.typekit.net/iof4yyq.css">
-</style>
+</style>  
 </head>
 <body>
   <!-- Header Section -->
@@ -37,18 +39,24 @@
     </nav>
   </header>
 
+<!-- Title Section -->
 <section class="title-container" style="background-image: url('../assets/networking-101.jpg');">
-    <h1 class="article-title">Networking 101: From Connections to Security</h1>
-  </div>
+  <section class="left">
+    <div class="title-overlay">
+      <h1>Networking 101:</h1>
+      <p>From Connections to Security</p> 
+    </div>
+  </section>
+  <section class="right"></section>
 </section>
+
 <section class="intro-container">
 <div class="article-intro-1">
     <h2>Computer Networking</h2>
     <p>
       The process of bridging two or more computing devices to facilitate
        the communication of information and resources though physical or 
-       wireless mediums (“What is computer networking?”, 2024) (“SMB 
-       University: Selling Cisco,” n.d.). When these devices have indeed
+       wireless mediums. When these devices have indeed
         formed connections between each other, we call this a network.
     </p>
     <p>
@@ -56,20 +64,11 @@
     </p>
     <p>
       Local Area Network (LAN) – a collection of connected devices in one 
-      physical location (“What is computer networking?”, 2024) (“What is 
-      Computer Networking?”, n.d.) (“SMB University: Selling Cisco,” n.d.).
-       A LAN can vary in size and include both wired and wireless devices 
-       (“What is computer networking?”, 2024) (“What is Computer Networking?”, 
-       n.d.) (“SMB University: Selling Cisco,” n.d.).
+      physical location.A LAN can vary in size and include both wired and wireless devices.
     </p>
     <p>
       Wide Area Network (WAN) – a collection of LANs and/or individual devices
-       that stretches over a large geographical area (“What is computer 
-       networking?”, 2024) (“What is Computer Networking?”, n.d.) (“SMB 
-       University: Selling Cisco,” n.d.). WANs are typically used by large 
-       organizations and government bodies (“What is computer networking?”, 
-       2024) (“What is Computer Networking?”, n.d.) (“SMB University: Selling
-        Cisco,” n.d.).
+       that stretches over a large geographical area.
     </p>
 </div>
 </section>
@@ -82,6 +81,7 @@
     <img src="../assets/abstract-network.jpg" alt="Description of image 1">
   </div>
 </section>
+
 <section class="article-section-1 split-layout">
   <div class="left-content">
 <p>
@@ -90,19 +90,17 @@
 </p>
 <p>
   <strong>Switch</strong> – this device establishes the connection between devices within a 
-  network and act as a controller in a LAN (“What is Computer Networking?”,
-   n.d.).
+  network and act as a controller in a LAN.
 </p>
 <p>
   <strong>Router</strong> – this device connects multiple networks together and to the Internet.
    It acts as a forwarder that chooses the best path to take to send the 
-   information it receives (“What is Computer Networking?”, n.d.).
+   information it receives.
 </p>
 <p>
   <strong>Access Point (AP)</strong> – this device allows wireless to create a connection with
    a network without the use of cables. It acts as an amplifier where a 
-   network’s wireless signal is transmitted across an area to wireless clients
-  (“What is Computer Networking?”, n.d.).
+   network’s wireless signal is transmitted across an area to wireless clients.
 </p>
   </div>
   <div class="right-image">
@@ -114,17 +112,14 @@
   <h2>OSI 7-Layer Model</h2>
   <p>
     The Open Systems Interconnection (OSI) 7-Layer Model is a theoretical structure 
-    that separates network communication into seven layers (“What is OSI Model?”,
-     n.d.). Since sending data over a network is quite complex, this framework 
+    that separates network communication into seven layers. Since sending data over a network is quite complex,this framework 
      makes clear divides in the networking process and provides a universal 
-     language for network administrators, designers, IT professionals, and various technologies 
-     (“SMB University: Selling Cisco,” n.d.) (“What is OSI Model?”, n.d.). Every layer depends 
+     language for network administrators, designers, IT professionals, and various technologies. Every layer depends 
      on technologies, protocols, and methods used in the previous layer, with Layer 1 (Physical) 
-     being the foundation. Not all systems that utilize the OSI model apply every layer 
-     (“What is OSI Model?”, n.d.).
+     being the foundation. Not all systems that utilize the OSI model apply every layer.
   </p>
 <section class="osi-table-section">
-  <h3>OSI 7-Layer Model (“SMB University: Selling Cisco,” n.d.) (“What is OSI Model?”, n.d.)</h3>
+  <h3>OSI 7-Layer Model</h3>
   <table class="osi-table">
     <thead>
       <tr>
@@ -171,23 +166,24 @@
   <div class="horizontal-layout">
     <div class="text-block">
       <div class="subheading">
+        <h2>Definitions</h2>
       </div>
       <p>
-        <strong>HTTP/HTTPS</strong> – Hypertext Transfer Protocol / Hypertext Transfer Protocol Secure are layer 7 protocols that facilitate communication between two or more web clients (“Types of Network Protocols and Their Uses”, 2024).
+        <strong>HTTP/HTTPS</strong> – Hypertext Transfer Protocol / Hypertext Transfer Protocol Secure are layer 7 protocols that facilitate communication between two or more web clients.
       </p>
       <p>
-        <strong>NFS</strong> – Network File System is a file sharing solution that allows two or more computers to access and transfer files (“Network File System overview”, 2024).
+        <strong>NFS</strong> – Network File System is a file sharing solution that allows two or more computers to access and transfer files.
       </p>
       <p>
-        <strong>SMB</strong> – Server Message Block is a file sharing solution that allows computer applications to read and write to files (“Overview of file sharing using,” 2025).
+        <strong>SMB</strong> – Server Message Block is a file sharing solution that allows computer applications to read and write to files.
       </p>
       <p>
-        <strong>TCP</strong> – Transmission Control Protocol is a connection protocol that establishes connection between applications before sending data (“Types of Network Protocols and Their Uses”, 2024).
+        <strong>TCP</strong> – Transmission Control Protocol is a connection protocol that establishes connection between applications before sending data.
       </p>
       <p>
-        <strong>UDP</strong> – User Datagram Protocol is a connection protocol that establishes a fast but unreliable connection between applications and is typically used when reliability is not required (“Types of Network Protocols and Their Uses”, 2024).
+        <strong>UDP</strong> – User Datagram Protocol is a connection protocol that establishes a fast but unreliable connection between applications and is typically used when reliability is not required.
       <p>
-        <strong>IPv4/IPv6</strong> – A standard which defines in which the network layers of two devices communicate [3][8].
+        <strong>IPv4/IPv6</strong> – A standard which defines in which the network layers of two devices communicate.
       </p>
     </div>
     <div class="middle-image">
@@ -195,22 +191,22 @@
     </div>
     <div class="side-paragraph">
       <p>
-        <strong>IP Address</strong> – A 32-bit logical addressing scheme (“SMB University: Selling Cisco,” n.d.) (“IP Networking Basics”, n.d.).
+        <strong>IP Address</strong> – A 32-bit logical addressing scheme.
       </p>
       <p>
-        <strong>MAC Address</strong> – Media Access Control addresses are unique hardware identifiers that are protocol-independent (“SMB University: Selling Cisco,” n.d.).
+        <strong>MAC Address</strong> – Media Access Control addresses are unique hardware identifiers that are protocol-independent.
       </p>
       <p>
-        <strong>Ethernet</strong> – A connection technology that operates at layers 2 and 3 of the OSI model. It allows two or more devices to communicate with each other via physical cabling (“What Is Ethernet?”, n.d.).
+        <strong>Ethernet</strong> – A connection technology that operates at layers 2 and 3 of the OSI model. It allows two or more devices to communicate with each other via physical cabling.
       </p>
       <p>
-        <strong>Fibre-optic</strong> – A connection technology that sends data in the form of pulses of light through threads of glass (“What Is Fiber Optics?”, 2024).
+        <strong>Fibre-optic</strong> – A connection technology that sends data in the form of pulses of light through threads of glass.
       </p>
       <p>
-        <strong>Wi-Fi</strong> – A wireless connection technology that uses radio waves to transmit data between two or more devices through frequencies (Lohnes, 2024).
+        <strong>Wi-Fi</strong> – A wireless connection technology that uses radio waves to transmit data between two or more devices through frequencies.
       </p>
       <p>
-        <strong>Bluetooth</strong>  – A short-range wireless connection technology that sends data between two or more devices in a peer-to-peer connection and without the need for wireless routers or access points (“What Is Bluetooth® Technology?”, n.d.).
+        <strong>Bluetooth</strong>  – A short-range wireless connection technology that sends data between two or more devices in a peer-to-peer connection and without the need for wireless routers or access points.
       </p>
     </div>
   </div>
@@ -220,20 +216,91 @@
     <h2>Network Security</h2>
     <p>
       <strong>Network Security</strong> is the design and practice of protecting a network; this includes its data, 
-      resources, clients, connection methods, usability, and accessibility (“What Is Network Security?”, n.d.). It 
-      achieves this using hardware and software technologies, methods, protocols, policies, and controls (“What Is 
-      Network Security?”, n.d.). By combining multiple layers of this security, a network is provided with comprehensive 
-      protection from unauthorized access, hackers, and vulnerabilities (“What Is Network Security?”, n.d.); this is also known as 
+      resources, clients, connection methods, usability, and accessibility. It 
+      achieves this using hardware and software technologies, methods, protocols, policies, and controls. By combining multiple layers of this security, a network is provided with comprehensive 
+      protection from unauthorized access, hackers, and vulnerabilities; this is also known as 
       <strong>Defense in Depth</strong>. Examples of network security include firewalls, email security, anti-virus 
-      and anti-malware software, network segmentation, access control, application security, and data loss prevention
-       (“What Is Network Security?”, n.d.).
+      and anti-malware software, network segmentation, access control, application security, and data loss prevention.
     </p>
     <p>
-      <strong>Defense in Depth</strong> – An information security strategy that utilizes people, technology, and operations to create protective barriers across multiple layers of a network (“defense-in-depth”, n.d.).
+      <strong>Defense in Depth</strong> – An information security strategy that utilizes people, technology, and operations to create protective barriers across multiple layers of a network.
     </p>
   </div>
   <div class="right-image">
     <img src="../assets/security.jpg" alt="Descriptive alt text">
+  </div>
+</section>
+
+<!-- Tip Section -->
+<section class="tip">
+  <p><strong>Want to see it in action?</strong></p>
+  <p>Check out this quick video breaking down how the internet works in just 12 minutes:</p>
+
+  <div class="tip-video">
+    <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube-nocookie.com/embed/3QhU9jd03a0" 
+      title="How the Internet Works in 12 Minutes" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+
+<!-- References Section -->
+<section class="ref-container">
+  <div class="ref-list">
+    <h2>References</h2>
+    <ul>
+      <li>
+        IBM. *What is computer networking?* Retrieved from https://www.ibm.com/think/topics/networking
+      </li>
+      <li>
+        Cisco. *What is Computer Networking?* Retrieved from https://www.cisco.com/c/en/us/solutions/enterprise-networks/what-is-computer-networking.html#~q-a
+      </li>
+      <li>
+        Cisco. *SMB University: Selling Cisco SMB Foundation Solutions Networking Fundamentals.* Retrieved from https://www.cisco.com/c/dam/global/fi_fi/assets/docs/SMB_University_120307_Networking_Fundamentals.pdf
+      </li>
+      <li>
+        Amazon Web Services. *What is OSI Model?* Retrieved from https://aws.amazon.com/what-is/osi-model/
+      </li>
+      <li>
+        GeeksforGeeks. *Types of Network Protocols and Their Uses.* Retrieved from https://www.geeksforgeeks.org/types-of-network-protocols-and-their-uses/
+      </li>
+      <li>
+        Microsoft. *Network File System overview.* Retrieved from https://learn.microsoft.com/en-us/windows-server/storage/nfs/nfs-overview
+      </li>
+      <li>
+        Microsoft. *Overview of file sharing using the SMB 3 protocol in Windows Server.* Retrieved from https://learn.microsoft.com/en-us/windows-server/storage/file-server/file-server-smb-overview
+      </li>
+      <li>
+        Cisco. *What Is Ethernet?* Retrieved from https://www.cisco.com/c/en/us/solutions/enterprise-networks/what-is-ethernet.html#~q-a
+      </li>
+      <li>
+        Fluke Networks. *What Is Fiber Optics? A Guide.* Retrieved from https://www.flukenetworks.com/blog/cabling-chronicles/what-is-fiber-optics
+      </li>
+      <li>
+        Lohnes, K. *How Does Wi-Fi Work?* Britannica. Retrieved from https://www.britannica.com/story/how-does-wi-fi-work
+      </li>
+      <li>
+        Intel. *What Is Bluetooth® Technology?* Retrieved from https://www.intel.com/content/www/us/en/products/docs/wireless/what-is-bluetooth.html
+      </li>
+      <li>
+        Cisco. *IP Networking Basics.* Retrieved from https://www.cisco.com/en/US/docs/security/vpn5000/manager/reference/guide/appA.html
+      </li>
+      <li>
+        Cisco. *What Is Network Security?* Retrieved from https://www.cisco.com/c/en_ca/products/security/what-is-network-security.html
+      </li>
+      <li>
+        National Institute of Standards and Technology. *defense-in-depth.* Retrieved from https://csrc.nist.gov/glossary/term/defense_in_depth
+      </li>
+      <li>Agarwal, S. (2014, December 2). How the internet works in 5 minutes [Video]. YouTube. https://www.youtube.com/watch?v=3QhU9jd03a0
+      </li>
+      </ul>
   </div>
 </section>
 

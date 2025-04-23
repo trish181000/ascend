@@ -215,11 +215,7 @@ nav ul li a:hover {
   .submit {
     width: 100%;
   }
-
-  
-  
 }
-
 
 /* For very small screens (mobile portrait) */
 @media (max-width: 480px) {
