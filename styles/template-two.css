@@ -1,9 +1,12 @@
+/* Title Section */
 .title-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
   padding: 80px;
   gap: 40px;
   flex-wrap: wrap;
+  position: relative; /* Required for absolute positioning of the title overlay */
 }
 
 .left {
@@ -31,6 +34,10 @@
   border-radius: 8px;
   max-width: 700px;
   color: #e7ecef;
+  position: absolute; /* Position it absolutely inside the container */
+  top: 50%; /* Position it vertically at the center */
+  left: 50%; /* Position it horizontally at the center */
+  transform: translate(-50%, -50%); /* Adjust for perfect centering */
 }
 
 .title-overlay h1{
@@ -279,11 +286,14 @@
 
   .info-section{
     max-width: 700px;
-
   }
 }
 
 @media (max-width: 480px) {
+  .title-container{
+    min-height: auto; /* Allow content to adjust for smaller screens */
+  }
+  
   .title-overlay {
     padding: 1rem 2rem;
     border-radius: 25px;
