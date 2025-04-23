@@ -1,62 +1,73 @@
 /* Hero Section */
 .hero {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #4a4d60;
-  }
-  
-  .hero p {
-    font-size: large;
-    width: 60%;
-  }
-
-  #heroVideo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4a4d60;
+  text-align: center;
 }
 
-  .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    position: relative;
-  }
-  
-  .hero h2 {
-    font-family: "all-round-gothic", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 3rem;
-    margin-bottom: 10px;
-    transition: font-size 0.3s ease;
-  }
-  
-.button {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    width: 70px;
-    height: 30px;
-    transition: color 0.5s;
-  }
-  
-.button::before {
+#heroVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h2 {
+  font-family: "all-round-gothic", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  transition: font-size 0.3s ease;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  max-width: 90%;
+  margin: 0 auto 1.5rem;
+}
+
+.btn {
+  font-family: "all-round-gothic", sans-serif;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.btn-fill {
+  border: 2px solid #72c780;
+  background: none;
+  color: #4a4d60;
+  border-radius: 25px;
+  padding: 12px 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.5s;
+}
+
+.btn-fill::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -65,120 +76,50 @@
   border-radius: 50%;
   top: 100%;
   left: 100%;
+  background: #72c780;
   transition: 0.7s;
-} 
- 
-.hero .button:hover {
-  color: rgb(255, 255, 255);
-} 
- 
-.hero .cta-btn::before {
+}
+
+.btn-fill:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.btn-fill:hover::before {
   top: -40px;
   left: -40px;
-} 
- 
-.cta-fill {
-  color: rgb(51, 51, 51);
-  border: 2px solid rgb(51, 51, 51);
-} 
- 
-.cta-fill::before {
-  background: rgb(51, 51, 51);
-} 
-
-
-
-.btn {  
-font-family: "all-round-gothic", sans-serif;
-font-size: larger;
-font-weight: 00;
 }
-
-.btn-fill {  
-    border: none;  
-    outline: none;  
-    background: none;  
-    text-align: center;  
-    display: inline-block;  
-    width: 180px;  
-    height: 50px;  
-    margin: 25px;  
-    position: relative;  
-    overflow: hidden; 
-    transition: color 0.5s;
-    border-radius: 25px;
-}  
-     
-.btn-fill::before { 
-     content: "";  
-     position: absolute;  
-     z-index: -1; 
-     height: 200px;  
-     width: 250px;  
-     border-radius: 50%;  
-     top: 100%;  
-     left: 100%;  
-     transition: 0.7s;
-}
-
-.btn-fill:hover {  
-  cursor: pointer;
-    color: white;
-}
-
-.btn-fill:hover::before {  
-    top: -40px;  
-    left: -40px;
-}
-
-.btn-fill {  
-    color: #4a4d60;  
-    border: 2px solid #72c780;
-}
-
-.btn-fill::before { 
-    background: #72c780;
-  }  
-
 
 /* Responsive Styles */
 @media (max-width: 768px) {
   .hero {
-      height: 60vh; 
+    height: 60vh;
   }
 
   .hero h2 {
-      font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   .hero p {
-      font-size: 1rem; 
-      max-width: 80%; 
-  }
-
-  .btn-fill {
-      width: 100%;
-      max-width: 220px; 
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .hero {
-      height: 50vh;
+    height: 50vh;
   }
 
   .hero h2 {
-      font-size: 2rem; 
+    font-size: 1.75rem;
   }
 
   .hero p {
-      font-size: 0.9rem;
-      max-width: 90%;
+    font-size: 0.95rem;
   }
 
   .btn-fill {
-    
-      width: 100%;
-      max-width: 200px;
+    width: 100%;
+    max-width: 200px;
   }
 }
