@@ -37,7 +37,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  backdrop-filter: blur(10px); /* Optional: adds a frosted-glass blur behind it */
+  backdrop-filter: blur(20px); /* Optional: adds a frosted-glass blur behind it */
 }
 
 .logo {
