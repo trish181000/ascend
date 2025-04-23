@@ -1,295 +1,283 @@
-/* Title Section */
 .title-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 80px;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-  
-  .left {
-    flex: 1;
-  }
-  
-  .left h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 1.2;
-  }
-  
-  .right {
-    flex: 1;
-  }
-  
-  .right p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  
-  .title-overlay {
-    background: rgba(0, 0, 0, 0.4);
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    max-width: 700px;
-    color: #e7ecef;
-  }
-  
-  .title-overlay p {
-    font-size: 25px;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  gap: 40px;
+  flex-wrap: wrap;
 }
-  /* Photo & Text Side-by-Side Section */
-  .photo-text-container {
-    display: flex;
-    justify-content: center;
-    padding: 4rem 1rem;
-    background-color: #e7ecef;
-  }
 
-  .content {
-    display: flex;
-    gap: 2rem;
-    max-width: 1000px;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .photo img {
-    width: 400px;
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    object-fit: cover;
-    margin: 0 30px 30px;
-  }
-  
-  .text {
-    max-width: 700px;
-    text-align:justify;
-    padding: 2rem;
-  }
-  
-  .text h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* Info Section with Columns */
-  .info-section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 3rem 1rem;
+.left {
+  flex: 1;
+}
+
+.left h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.right {
+  flex: 1;
+}
+
+.right p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.title-overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  max-width: 700px;
+  color: #e7ecef;
+}
+
+.title-overlay p {
+  font-size: 25px;
+  text-align: center;
+}
+
+/* ================= Photo & Text Side-by-Side Section ================= */
+.photo-text-container {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+  background-color: #e7ecef;
+}
+
+.content {
+  display: flex;
+  gap: 2rem;
+  max-width: 1000px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  margin: 0 30px 30px;
+}
+
+.text {
+  max-width: 700px;
+  padding: 2rem;
+}
+
+.text h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* ================= Info Section with Columns ================= */
+.info-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.text-columns {
+  flex: 1 1 500px;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.column {
+  text-align: justify;
+  flex: 1 1 220px;
+  min-width: 500px;
+  overflow-wrap: break-word;
+}
+
+.image-block img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Virtualization Section  */
+.virtualization-section {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.virtualization-section .intro {
+  margin-bottom: 2rem;
+}
+
+.virtualization-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.virtualization-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.virtualization-types .type {
+  background-color: #f7f7f7;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+}
+
+.virtualization-types h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.virtualization-types p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/*Virtualization Benefits*/
+.virtualization-benefits {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.virtualization-benefits h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.virtualization-benefits .intro p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.benefits-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.benefit {
+  background-color: #f1f1f1;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.benefit h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.benefit p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.supporting-components ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/*References*/
+.ref-container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.ref-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.ref-container p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.ref-container ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0 auto;
+}
+
+.ref-container ul li {
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+/* Responsive Media Queries*/
+/* Tablet View */
+@media (min-width: 768px) {
+  .title-overlay,
+  .title-overlay-light {
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    max-width: 650px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-  }
-  
-  .section-heading {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    text-align: left;
-  }
-  
-  .content-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  
-  .text-columns {
-    flex: 1 1 500px;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: left;
-  }
-  
-  .column {
-    text-align: justify;
-    flex: 1 1 220px;
-    min-width: 500px;
-    overflow-wrap: break-word;
-  }
-  
-  .image-block img {
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-  }
-  
-  /* Virtualization Section */
-  .virtualization-section {
-    max-width: 1150px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  
-  .virtualization-section .intro {
-    margin-bottom: 2rem;
-  }
-  
-  .virtualization-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .virtualization-types {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-  }
-  
-  .virtualization-types .type {
-    background-color: #f7f7f7;
-    padding: 1.2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
-  }
-  
-  .virtualization-types h3 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    color: #444;
-  }
-  
-  .virtualization-types p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-  
-  /* Virtualization Benefits Section */
-  .virtualization-benefits {
-    max-width: 1150px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  
-  .virtualization-benefits h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .virtualization-benefits .intro p {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  
-  .benefits-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
-  }
-  
-  .benefit {
-    background-color: #f1f1f1;
-    padding: 1.2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-  }
-  
-  .benefit h3 {
-    margin-top: 0;
-    font-size: 1.1rem;
-    color: #444;
-  }
-  
-  .benefit p {
-    font-size: 0.95rem;
-    line-height: 1.5;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
-  .supporting-components ul {
-    list-style: none;
-    padding-left: 0;
+  .title-overlay h1 {
+    font-size: 35px;
+    white-space: nowrap;
   }
 
-  /* References */
-  .ref-container {
-    max-width: 1100px;
-    margin: 3rem auto;
-    padding: 0 2rem;
-    text-align: center; /* centers all text inside this container */
-  }
-  
-  .ref-container h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #444;
-  }
-  
-  .ref-container p {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    color: #444;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
   .ref-container ul {
-    list-style: none;
-    padding-left: 0;
-    font-size: 0.875rem;
-    line-height: 1.6;
-    color: #333;
-    margin: 0 auto; /* ensures ul stays centered */
-  }
-  
-  .ref-container ul li {
-    margin-bottom: 1rem;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    word-break: break-word;
-    text-align: center; /* centers the list item text */
-  }
-  
-  /* Responsive Media Queries */
-  
-  /* Tablet View*/
-  @media (min-width: 768px) {
-    .title-overlay {
-      padding: 1rem 2rem;
-      border-radius: 25px;
-      max-width: 650px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      white-space: nowrap; /* Keeps the text on one line */
-      overflow: hidden; /* Optional: hides overflow if it's too long */
-    }
-
-    .title-overlay-light {
-      padding: 1rem 2rem;
-      border-radius: 25px;
-      max-width: 650px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      white-space: nowrap; /* Keeps the text on one line */
-      overflow: hidden; /* Optional: hides overflow if it's too long */
-    }
-  
-    .title-overlay h1 {
-      font-size: 35px; /* Adjust for better mobile fitting */
-      white-space: nowrap; /* Makes sure the heading stays on one line */
-    }
-
-    .ref-container ul {
-      max-width: 650px;
-      text-align: center;
-    }
+    max-width: 650px;
+    text-align: center;
   }
 
-  /* Mobile view (≤480px) */
+  .info-section{
+    max-width: 700px;
+
+  }
+}
+
 @media (max-width: 480px) {
   .title-overlay {
     padding: 1rem 2rem;
@@ -302,17 +290,41 @@
   }
 
   .title-overlay h1 {
-    font-size: 25px;
-    white-space: nowrap
+    font-size: 20px;
+    white-space: nowrap;
   }
 
   .title-overlay p {
     font-size: 25px;
-}
+  }
 
-.ref-container ul {
-  max-width: 350px;
-  text-align: center;
-}
+  .ref-container ul {
+    max-width: 350px;
+    text-align: center;
+  }
 
+  .info-section {
+    max-width: 350px;
+    padding: 1rem;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .text-columns {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .column {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .image-block img {
+    max-width: 100%;
+    height: auto;
+  }
 }
