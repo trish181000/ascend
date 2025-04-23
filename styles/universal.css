@@ -27,7 +27,7 @@ header {
 }
 
 .sticky-menu {
-  background: #c1d6e2; /* or #e7ecef*/
+  background: rgba(231, 236, 239, 0.9); /* Greyish with some transparency */
   position: relative;
   top: 0;
   left: 0;
@@ -37,6 +37,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  backdrop-filter: blur(10px); /* Optional: adds a frosted-glass blur behind it */
 }
 
 .logo {
