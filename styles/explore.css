@@ -2,9 +2,9 @@ body {
     background: linear-gradient(#f4f6f7, #a5bece);
 }
 
+/* Headings & Descriptions */
 .explore-desc {
-    margin-top: 175px;
-    margin-bottom: 150px;
+    margin: 175px auto 150px;
     text-align: center;
     color: #4a4d60;
 }
@@ -13,7 +13,7 @@ body {
     font-size: 3rem;
 }
 
-.explore-desc p { 
+.explore-desc p {
     max-width: 70%;
     margin: 20px auto;
 }
@@ -25,28 +25,12 @@ h2 {
     font-size: 2.5rem;
 }
 
-.science {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
-}
-
-.technology {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
-}
-
-.engineering {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
-}
-
-.art {
+/* Sections */
+.science,
+.technology,
+.engineering,
+.art,
+.mathematics {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,13 +38,10 @@ h2 {
 }
 
 .mathematics {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 50vh;
     margin-bottom: 150px;
 }
 
+/* Card Layout */
 .card-wrapper {
     max-width: 1100px;
     margin: 0 60px 35px;
@@ -72,7 +53,7 @@ h2 {
     list-style: none;
 }
 
-.card-list .card-item .card-link {
+.card-link {
     user-select: none;
     display: block;
     background: #fff;
@@ -84,58 +65,60 @@ h2 {
     transition: 0.2s ease;
 }
 
-.card-list .card-item .card-link:hover {
+.card-link:hover {
     border-color: #4a4d60;
 }
 
-.card-list .card-link .card-image {
+.card-image {
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     border-radius: 10px;
 }
 
-.card-list .card-link .badge {
-   padding: 8px 16px;
-   font-size: 0.95rem;
-   font-weight: 700;
-   margin: 16px 0 18px;
-   width: fit-content;
-   border-radius: 50px;
+/* Badges */
+.badge {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin: 16px 0 18px;
+    width: fit-content;
+    border-radius: 50px;
 }
 
-.card-list .card-link .badge.sci {
+.badge.sci {
     color: #72c780;
     background: #e8fcec;
 }
 
-.card-list .card-link .badge.tech{
+.badge.tech {
     color: #a5bece;
     background: #edf8ff;
 }
 
-.card-list .card-link .badge.eng{
+.badge.eng {
     color: #fec847;
     background: #fff7e6;
-   }
+}
 
-.card-list .card-link .badge.ar{
+.badge.ar {
     color: #a584a0;
     background: #fff0fd;
-   }
+}
 
- .card-list .card-link .badge.maths{
+.badge.maths {
     color: #f28751;
     background: #ffe9de;
-   }
+}
 
-.card-list .card-link .card-title {
+/* Card Content */
+.card-title {
     font-size: 1.19rem;
     color: #4a4d60;
     font-weight: 600;
 }
 
-.card-list .card-link .card-button {
+.card-button {
     height: 35px;
     width: 35px;
     color: #4a4d60;
@@ -148,7 +131,83 @@ h2 {
     transition: 0.4s ease;
 }
 
-.card-list .card-link:hover .card-button {
-color: #fff;
-background: #4a4d60;
+.card-link:hover .card-button {
+    color: #fff;
+    background: #4a4d60;
+}
+
+/* Media Queries */
+
+/* Tablets and Small Desktops */
+@media (max-width: 1024px) {
+    .explore-desc h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .card-wrapper {
+        margin: 0 40px 35px;
+    }
+}
+
+/* Tablets & Large Phones */
+@media (max-width: 768px) {
+    .explore-desc {
+        margin: 120px auto 100px;
+    }
+
+    .explore-desc h1 {
+        font-size: 2rem;
+    }
+
+    .explore-desc p {
+        max-width: 90%;
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .card-wrapper {
+        margin: 0 20px 30px;
+    }
+
+    .card-link {
+        padding: 14px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .badge {
+        font-size: 0.85rem;
+        padding: 6px 12px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .explore-desc h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .badge {
+        font-size: 0.75rem;
+        margin: 12px 0 14px;
+    }
+
+    .card-button {
+        margin: 20px 0 0;
+        height: 30px;
+        width: 30px;
+    }
 }
