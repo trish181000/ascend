@@ -152,7 +152,7 @@
   .virtualization-types h3 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    color: #333;
+    color: #444;
   }
   
   .virtualization-types p {
@@ -195,7 +195,7 @@
   .benefit h3 {
     margin-top: 0;
     font-size: 1.1rem;
-    color: #333;
+    color: #444;
   }
   
   .benefit p {
@@ -208,12 +208,44 @@
     padding-left: 0;
   }
 
-  /*References*/
-  .intro-container ul {
+  /* References */
+  .ref-container {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    text-align: center; /* centers all text inside this container */
+  }
+  
+  .ref-container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  .ref-container p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #444;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .ref-container ul {
     list-style: none;
     padding-left: 0;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0 auto; /* ensures ul stays centered */
+  }
+  
+  .ref-container ul li {
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    text-align: center; /* centers the list item text */
   }
   
   /* Responsive Media Queries */
@@ -250,6 +282,11 @@
       font-size: 35px; /* Adjust for better mobile fitting */
       white-space: nowrap; /* Makes sure the heading stays on one line */
     }
+
+    .ref-container ul {
+      max-width: 650px;
+      text-align: center;
+    }
   }
 
   /* Mobile view (≤480px) */
@@ -271,6 +308,11 @@
 
   .title-overlay p {
     font-size: 25px;
+}
+
+.ref-container ul {
+  max-width: 350px;
+  text-align: center;
 }
 
 }
